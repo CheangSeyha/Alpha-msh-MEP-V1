@@ -43,12 +43,12 @@ function Navbar() {
 
   const handleOpen = () => setIsOpen((prev) => !prev);
   return (
-    <div className="w-full max-w-6xl mx-auto flex flex-row justify-center bg-white fixed top-0 right-0 left-0 p-4 md:p-2 md:px-4.5 lg:p-2.5">
-      <div className="w-full flex flex-row justify-between items-center mx-auto">
+    <div className="w-full mx-auto flex flex-row justify-center items-center fixed top-0 right-0 left-0 p-4 md:p-2 md:px-4.5 lg:p-2.5 z-50 opacity-100">
+      <div className="w-full max-w-6xl mx-auto flex flex-row justify-between items-center">
         <div className="w-1/3 h-3/4 md:w-1/4 md:h-3/4">
-          <img src="logo.jpg" alt="logo" className="w-full h-full object-fit" />
+          <img src="logo.png" alt="logo" className="w-full h-full object-fit" />
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden lg:block z-100">
           <NavigationMenu viewport={false}>
             <NavigationMenuList>
               <NavigationMenuItem>
