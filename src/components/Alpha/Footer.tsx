@@ -177,7 +177,7 @@ function Footer() {
                 <FaLinkedin className='max-[775px]:w-8 max-[775px]:h-8 hover:rotate-12 hover:scale-125 hover:text-blue-700'/>
               </a>
             </div>
-            <p className='text-center text-sm text-gray-600 p-4 mt-8 font-poppins mr-2'>© 2023 Alpha MSH Co., LTD. All rights reserved.</p>
+            <p className='text-center text-sm text-gray-600 p-4 mt-8 bg-amber-300 font-poppins mr-2'>© 2023 Alpha MSH Co., LTD. All rights reserved.</p>
           </div>
         </div>
       </div>
