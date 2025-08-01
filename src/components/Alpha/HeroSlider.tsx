@@ -60,7 +60,7 @@ export default function HeroSlider() {
           team, we are committed to delivering reliable and high-quality
           services tailored to our clients’ needs
         </p>
-        <div className="flex flex-col sm:flex-row gap-5 mt-5 md:mt-8 xl:mt-5">
+        <div className="flex flex-col sm:flex-row gap-2 md:gap-5 mt-5 md:mt-8 xl:mt-5">
           <motion.button
             whileHover="hover"
             className="w-fit flex items-center bg-red-700 text-white py-2.5 px-5.5 rounded-lg transition-colors duration-300"
@@ -75,9 +75,10 @@ export default function HeroSlider() {
               <FaArrowDown className="w-3 h-4 ml-2" />
             </motion.div>
           </motion.button>
+
           <motion.button
             whileHover="hover"
-            className="min-[1440px]:hidden w-fit  flex items-center bg-[#1b42ce] text-white py-2.5 px-5.5 rounded-lg  transition-colors duration-300"
+            className="min-[1440px]:hidden w-fit  flex items-center bg-[#1b42ce] text-white py-2.5 px-5 rounded-lg  transition-colors duration-300"
           >
             <p className="font-exo text-base font-medium">
               Get Company Profile
@@ -95,6 +96,7 @@ export default function HeroSlider() {
           </motion.button>
         </div>
       </div>
+
       <div className="max-[1440px]:hidden absolute bottom-0 z-30 top-[85%] xl:right-[22.5%]">
         <motion.button
           whileHover="hover"
