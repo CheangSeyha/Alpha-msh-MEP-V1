@@ -290,7 +290,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Whoweare"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Who we are
@@ -299,7 +299,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/CEO"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Speech from CEO
@@ -308,7 +308,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/MVC"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Mission & Vision
@@ -317,7 +317,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Team"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Team members
@@ -336,7 +336,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Mechanical"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Mechanical Services
@@ -345,7 +345,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Electrical"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Electrical Services
@@ -354,7 +354,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Plumbing"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Plumbing Services
@@ -363,7 +363,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Civil"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Civil Services
@@ -372,7 +372,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Architecture"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Architecture Services
@@ -391,7 +391,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Completed"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Completed
@@ -400,7 +400,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Inprogress"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Inprogress
@@ -409,7 +409,7 @@ function Navbar() {
                             <li>
                               <Link
                                 href="/Future"
-                                className="font-exo font-medium hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
+                                className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
                                 Future
