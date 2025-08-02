@@ -63,6 +63,11 @@ export default function HeroSlider() {
         <div className="flex flex-col sm:flex-row gap-2 md:gap-5 mt-5 md:mt-8 xl:mt-5">
           <motion.button
             whileHover="hover"
+            onClick={() => {
+              document
+                .getElementById("Services")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
             className="w-fit flex items-center bg-red-700 text-white py-2.5 px-5.5 rounded-lg transition-colors duration-300"
           >
             <p className="font-exo text-base font-medium">Our Services</p>
