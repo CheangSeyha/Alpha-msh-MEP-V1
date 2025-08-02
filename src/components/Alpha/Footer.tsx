@@ -1,19 +1,18 @@
 import React from 'react'
-// import { InteractiveHoverButton } from '../magicui/interactive-hover-button';
+import { InteractiveHoverButton } from '../magicui/interactive-hover-button';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
- 
 
 function Footer() {
   return (
     <div className='relative w-full'>
       <img src="worldMap.jpg" alt="Background" className='w-full h-[550px] max-[530px]:hidden object-cover blur-xs'/>
-      <div className='absolute top-0 w-full footer-content bg-red-500 flex items-center justify-between px-8 max-[530px]:hidden'>
+      <div className='absolute top-0 w-full footer-content bg-blue-500 flex items-center justify-between px-8 max-[530px]:hidden'>
         <div className='flex max-[1115px]:flex-col max-[1115px]:space-y-2 justify-evenly items-center w-full py-10'>
-          <p className='text-gray-600 text-3xl max-[700px]:text-xl font-extrabold font-poppins'>Get in touch with one of our MEP engineers</p>
-          {/* <InteractiveHoverButton>Let's Chat</InteractiveHoverButton> */}
+          <p className='text-white text-3xl max-[700px]:text-xl font-extrabold font-poppins'>Get in touch with one of our MEP engineers</p>
+          <InteractiveHoverButton>Let's Chat</InteractiveHoverButton>
         </div>
       </div>
       <div className='absolute top-30 min-[940px]:max-[1115px]:top-44 max-[700px]:top-40 max-[950px]:top-44 flex-col w-full  justify-center px-[10vw] max-[530px]:hidden'>
