@@ -8,11 +8,11 @@ import { FaLinkedin } from "react-icons/fa";
 
 function Footer() {
   return (
-    <div className='fixed bottom-0 w-full'>
-      <img src="worldMap.jpg" alt="Background" className='w-full h-[550px] max-[530px]:hidden object-cover blur-sm'/>
+    <div className='relative w-full'>
+      <img src="worldMap.jpg" alt="Background" className='w-full h-[550px] max-[530px]:hidden object-cover blur-xs'/>
       <div className='absolute top-0 w-full footer-content bg-red-500 flex items-center justify-between px-8 max-[530px]:hidden'>
         <div className='flex max-[1115px]:flex-col max-[1115px]:space-y-2 justify-evenly items-center w-full py-10'>
-          <p className='text-gray-600 text-4xl max-[700px]:text-xl font-extrabold font-poppins'>Get in touch with one of our MEP engineers</p>
+          <p className='text-gray-600 text-3xl max-[700px]:text-xl font-extrabold font-poppins'>Get in touch with one of our MEP engineers</p>
           {/* <InteractiveHoverButton>Let's Chat</InteractiveHoverButton> */}
         </div>
       </div>
@@ -20,7 +20,7 @@ function Footer() {
         <div className='w-full flex min-[665px]:max-[970px]:flex-col max-[665px]:flex max-[665px]:justify-between max-[970px]:justify-center max-[970px]:items-center max-[970px]:gap-y-4 max-[970px]:mt-4 justify-between p-4'>
           <a href="/">
             <img 
-              src="logo-en-removebg.png"
+              src="logo.png"
               alt="Alpha MSH logo"
               className='w-[16vw] max-[950px]:w-[200px] h-auto object-contain' 
             />
@@ -40,8 +40,8 @@ function Footer() {
               </a>
             </div>
           </div>
-        </div>
-        <div className='w-full flex justify-between bg-gray-300/30 p-4 border-b-4 border-blue-600/30 gap-x-12 border-t-4 border-t-red-600/30 rounded-2xl'>
+        </div> 
+        <div className='w-full flex  mt-2 justify-between bg-gray-300/30 p-4 border-b-4 border-blue-600/30 gap-x-12 border-t-4 border-t-red-600/30 rounded-2xl'>
           <div className='w-1/4 max-[970px]:hidden transition-all duration-500 ease-in-out min-[1360px]:text-lg'>
             <span className='text-xl font-bold font-poppins'>ALPHA MSH Co., LTD </span><br/>is a registered Cambodian company providing expert Mechanical, Electrical, Plumbing,
             and Fire Fighting (MEPF) system installations
@@ -96,7 +96,7 @@ function Footer() {
         </div>
       </div>
       <div className='max-[530px]:hidden'>
-        <p className='text-center text-gray-600 p-8 font-poppins'>© 2023 Alpha MSH Co., LTD. All rights reserved.</p>
+        <p className='text-center text-gray-600 p-4 font-poppins'>© 2023 Alpha MSH Co., LTD. All rights reserved.</p>
       </div>
       <div className='max-[530px]:hidden  w-full h-4 bg-blue-600'></div>
 
@@ -105,11 +105,11 @@ function Footer() {
       {/* for mobile */}
       <div className='relative w-full min-[530px]:hidden bg-gray-300'>
         <img 
-          src="/worldMap.jpg" 
+          src="worldMap.jpg" 
           alt="Background image" 
-          className='object-cover w-full h-[650px] max-[315px]:h-[750px] min-[315px]:max-[370px]:h-[670px] bg-gray-300 blur-sm'
+          className='object-cover w-full h-[660px] blur-sm'
         />
-        <div className='absolute top-5 left-2 flex flex-wrap gap-y-8 gap-x-16'>
+        <div className='absolute top-0 flex flex-wrap gap-y-8 gap-x-16 p-4'>
           <div className='w-fit'>
             <span className='text-lg min-[1360px]:text-xl font-bold font-poppins'>About Us</span><br />
             <ul className='ml-2 mt-3 space-y-1 min-[1360px]:text-lg'>
@@ -160,13 +160,13 @@ function Footer() {
               <span className='text-lg min-[1360px]:text-xl font-bold font-poppins'>Our Company</span><br/>
               <a href="/">
                 <img 
-                  src="logo-en-removebg.png"
+                  src="logo.png"
                   alt="Alpha MSH logo"
                   className='w-[16vw] max-[950px]:w-[200px] h-auto object-contain m-5' 
                 />
               </a>
             {/* </div> */}
-            <div className='w-full flex items-center justify-evenly mt-10'>
+            <div className='w-full flex items-center justify-evenly mt-10 border-y-2 border-gray-500/50 py-4'>
               <a href='' rel="noopener noreferrer">
                 <FaFacebookSquare className='max-[775px]:w-8 max-[775px]:h-8 hover:rotate-12 hover:scale-125 hover:text-blue-700'/>
               </a>
@@ -177,7 +177,7 @@ function Footer() {
                 <FaLinkedin className='max-[775px]:w-8 max-[775px]:h-8 hover:rotate-12 hover:scale-125 hover:text-blue-700'/>
               </a>
             </div>
-            <p className='text-center text-sm text-gray-600 p-4 mt-8 bg-amber-300 font-poppins mr-2'>© 2023 Alpha MSH Co., LTD. All rights reserved.</p>
+            <p className='text-center text-sm text-gray-600 p-4 mt-8 font-poppins'>© 2023 Alpha MSH Co., LTD. All rights reserved.</p>
           </div>
         </div>
       </div>
