@@ -17,7 +17,7 @@ export default function Home() {
           <HeroSlider />
         </section>
         {/* Main content section */}
-        <section className="bg-slate-200" id="Services">
+        <section className="bg-slate-100/30" id="Services">
           <div className="max-w-6xl flex flex-col gap-5 mx-auto mt-10 p-4 md:p-2 md:px-4.5 lg:p-2.5">
             <div className="relative inline-block pb-1">
               <h2 className="text-center text-3xl font-bold font-exo relative z-10">
