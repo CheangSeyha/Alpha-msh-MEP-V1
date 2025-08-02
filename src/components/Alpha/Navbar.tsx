@@ -41,9 +41,56 @@ function Navbar() {
     };
   }, [isOpen]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.getElementById("navigation");
+      // Check if the nav element exists before applying styles
+      // This will add a background color and shadow to the nav when the user scrolls down
+      if (nav) {
+        if (window.scrollY > 10) {
+          nav.classList.add(
+            "bg-white",
+            "shadow-lg",
+            "transition-all",
+            "duration-400",
+            "ease-in",
+            "text-white",
+            "top-0",
+            "fixed",
+            "z-50",
+            "mt-0",
+            "p-0",
+            "max-[650px]:p-2",
+            "max-[750px]:p-3",
+            "max-[895px]:p-4"
+          );
+        } else {
+          nav.classList.remove(
+            "bg-white",
+            "shadow-lg",
+            "transition-all",
+            "duration-200",
+            "ease-out",
+            "mt-0",
+            "p-0",
+            "max-[650px]:p-2",
+            "max-[750px]:p-3",
+            "max-[895px]:p-4",
+            "top-0"
+          );
+        }
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const handleOpen = () => setIsOpen((prev) => !prev);
   return (
-    <div className="w-full mx-auto flex flex-row justify-center items-center fixed top-0 right-0 left-0 p-4 md:p-2 md:px-4.5 lg:p-2.5 z-50 opacity-100">
+    <div
+      className="w-full mx-auto flex flex-row justify-center items-center fixed top-0 right-0 left-0 p-4 md:p-2 md:px-4.5 lg:p-2.5 z-50 opacity-100"
+      id="navigation"
+    >
       <div className="w-full max-w-6xl mx-auto flex flex-row justify-between items-center">
         <div className="w-1/3 h-3/4 md:w-1/4 md:h-3/4">
           <img src="logo.png" alt="logo" className="w-full h-full object-fit" />
