@@ -42,7 +42,7 @@ function ProblemSolving() {
       <div className="w-full flex flex-col md:flex-row justify-center items-stretch gap-10 md:gap-5 lg:gap-20 mt-8">
         {Problem.map((item, index) => (
           <div key={index} className="flex-1 w-full">
-            <div className="flex flex-col items-center bg-blue-50 rounded-lg p-5 h-full overflow-hidden">
+            <div className="flex flex-col items-center bg-white rounded-lg p-5 h-full overflow-hidden">
               <div className="text-4xl mb-2 p-2">{item.icon}</div>
               <div className="flex flex-col gap-1 mt-2 mb-2">
                 <h3 className="text-xl text-center font-bold font-exo">

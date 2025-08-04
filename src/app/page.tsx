@@ -21,7 +21,7 @@ export default function Home() {
         </section>
 
         {/* Problem Solving */}
-        <section>
+        <section className="bg-blue-500/10">
           <div className="max-w-6xl mx-auto p-4 md:p-2 md:px-4.5 lg:p-2.5 mt-20 mb-20">
             <ProblemSolving />
           </div>
