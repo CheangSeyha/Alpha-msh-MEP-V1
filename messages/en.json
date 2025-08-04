@@ -1,0 +1,203 @@
+{
+  "HomePage": {
+    "welcome": "Welcome to Alpha MSH Co., Ltd.",
+    "description": "We are a Cambodia-registered company specializing in the design and installation of Mechanical, Electrical, Plumbing, and Fire Fighting (MEPF) systems. With a skilled team, we deliver reliable, high-quality services across various sectors including hotels, banks, factories, residential buildings, healthcare, malls, and restaurants.",
+    "ourprojects": "Our Projects",
+    "completed": "Completed",
+    "inprogress": "In Progressing",
+    "future": "Future",
+    "ourservices": "Our Services",
+    "MechanicalServices": "Mechanical Services",
+    "ElectricalServices": "Electrical Services",
+    "PlumbingServices": "Plumbing Services"
+  },
+
+  "Contact": {
+    "contactpage": "Contact",
+    "moredetails": "for more details",
+    "Submit your enquiry here": "Submit your enquiry here",
+    "Familyname": "Family name",
+    "Givenname": "Given name",
+    "address": "Address",
+    "phone": "Phone number",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Messaage",
+    "sendmessage": "Send Now",
+    "officehour": "Office Hours",
+    "mon-fri": "Monday-Friday: 8:00 AM - 5:00 PM",
+    "sat": "Saturday: 8:00 AM - 12:00 PM | 1:00 PM - 5:00 PM",
+    "sun": "Sunday: Closed"
+  },
+
+  "whoweare": {
+    "whoweare": "Who We Are"
+  },
+
+  "speechfromceo": {
+    "speechfromceo": "Speech from CEO"
+  },
+
+  "Team": {
+    "team": "Team Members"
+  },
+
+  "MVC": {
+    "mission&vision": "mission & vision",
+    "mission": "mission",
+    "description1": "Our mission is to empower our customers by consistently delivering high-quality, reliable services and unwavering, continuous support. We are dedicated to being a trusted partner, ensuring our customers not only achieve their immediate goals but also experience sustained success and satisfaction in their endeavors.",
+    "vision": "vision",
+    "description2": "Our vision is to be the undisputed industry leader, recognized for redefining service excellence. We aim to consistently surpass every customer's expectations, fostering deep loyalty and becoming the indispensable partner that drives their sustained success.",
+    "core values": "core values",
+    "description3": "At our core, we embody Professionalism with expertise and high standard operate with unwavering Integrity by always doing what's right, and uphold deep Accountability by owning our actions and promises."
+  },
+
+  "inprogressing": {
+    "inprogressing": "In Progressing"
+  },
+
+  "completed": {
+    "completed": "Completed Projects",
+    "informations": "Site information",
+    "workon": "Work on",
+    "location": "Location",
+    "starton": "Start on",
+    "endon": "End on"
+  },
+
+  "future": {
+    "future": "future projects"
+  },
+
+  "Navbar": {
+    "Home": "Home",
+    "About": "About Us",
+    "whoweare": "Who We Are",
+    "speechfromceo": "Speech from CEO",
+    "mission&vision": "Mission & Vision",
+    "team": "Team members",
+    "Services": "Services",
+    "ourprojects": "Our Projects",
+    "completed": "Completed",
+    "inprogress": "In Progressing",
+    "future": "Future",
+    "Projects": "Projects",
+    "MechanicalServices": "Mechanical Services",
+    "ElectricalServices": "Electrical Services",
+    "PlumbingServices": "Plumbing Services",
+    "Contact": "Contact"
+  },
+
+  "Mechanical": {
+    "Mechanical": "Mechanical Services",
+    "air-conditioning system": "design & installation of air-conditioning system",
+    "description": "An air-conditioning system is composed of several key elements working in concert to provide cooling. At its core, a chiller system generates chilled water, which is then circulated to Air Handling Units (AHUs), used for conditioning air in large spaces, and Fan Coil Units (FCUs), which serve individual rooms. For more localized cooling, split unit systems are utilized, encompassing VRV/VRF systems for multiple zones, digital scroll systems for variable capacity, and single split units for one-to-one cooling. The efficient distribution of chilled water relies on chilled water piping, while ducting is crucial for delivering conditioned air and returning warm air. The overall design and installation of these components, from capacity planning and zoning to equipment mounting and electrical work, form the complete air-conditioning framework.",
+    "ventilation system": "design & installation of ventilation system",
+    "title1": "Air Exhausting System",
+    "description1": "This specifically deals with removing contaminated or stale air. Design considers the type of contaminants to be removed, ensuring adequate air change rates, and selecting appropriate fans and ductwork. Crucial aspects include proper stack design for pollutant dispersal and fire safety measures. Installation involves secure fan/duct mounting and integration with safety systems",
+    "title2": "Kitchen Hood",
+    "description2": "This focuses on capturing and removing heat, steam, and grease from kitchens. Design involves selecting the correct hood type and ensuring proper sizing and placement over cooking equipment. Essential components include powerful exhaust fans, grease-rated ductwork, and grease filters. Makeup air (MUA) is vital to prevent negative pressure, and fire suppression systems are often integrated. Installation requires structural support, precise ductwork, and safety system integration",
+    "title3": "Fresh Air System",
+    "description3": "This is about introducing conditioned outdoor air into a building. Design involves determining airflow rates based on occupancy and codes, filtering the incoming air, and conditioning it (heating/cooling/humidifying) for comfort. Energy recovery (HRV/ERV) is crucial for efficiency. Proper intake location (away from pollutants) and effective air distribution are also key. Installation includes secure unit mounting, correct ductwork, and system balancing."
+  },
+
+  "Electrical": {
+    "electrical": "electrical services",
+    "lowvoltage": "low voltage",
+    "title1": "Transformer",
+    "description1": "This involves the installation, connection, protection, and testing of transformers. Specifically, it includes mounting the transformer, connecting its high voltage (primary) and low voltage (secondary) sides, installing overcurrent protective devices (like fuses or circuit breakers), ensuring proper grounding for safety, and conducting commissioning tests to verify functionality and safety.",
+
+    "title2": "Generator",
+    "description2": "Encompasses the selection, installation, wiring, and commissioning of backup or prime power generators. This includes sizing the generator to meet load requirements, positioning and securing the unit, connecting it to the building's electrical system via an Automatic Transfer Switch (ATS), integrating fuel and exhaust systems, performing control wiring, and conducting load bank testing to ensure it can supply the required power reliably.",
+
+    "title3": "Main Distribution Board and Sub Distribution",
+    "description3": "Focuses on the design, fabrication, installation, and internal wiring of these crucial power distribution panels. This involves determining the appropriate panel size and layout, mounting the enclosures, installing busbars, meticulously wiring and installing circuit breakers for each circuit, terminating incoming and outgoing cables, installing metering devices, and ensuring clear labeling and accurate single-line diagrams for future reference and maintenance",
+
+    "title4": "Motor Control System",
+    "description4": "Involves the installation, wiring, and configuration of components designed to control and protect electric motors. This includes mounting motor starters (DOL, Star-Delta, Soft Starters, VFDs), wiring control circuits for start & stop buttons, interlocks, and protective relays, integrating with automation systems (if any), and commissioning the system to ensure correct motor operation, speed control, and overload protection",
+
+    "title5": "Lighting and Power System",
+    "description5": "Covers the installation of all cabling, conduits, fixtures, and outlets that deliver electricity for illumination and general power. This includes laying out and installing cable trays or conduits, pulling and terminating electrical cables to meet load demands, installing various types of lighting fixtures (indoor, outdoor, emergency), wiring and mounting switches, installing general-purpose and dedicated power outlets, and performing comprehensive testing to ensure all points are functional and safe.",
+
+    "title6": "Grounding and Lightning Protection System",
+    "description6": "Focuses on designing and installing a comprehensive safety and protection network. For grounding, this means installing earth electrodes (rods, plates), connecting main earthing conductors, and bonding all non-current-carrying metal parts to the ground system. For lightning protection, it includes installing air terminals (lightning rods) on rooftops, running down conductors along the building exterior, connecting to a dedicated earth termination network, and installing Surge Protective Devices (SPDs) to protect against voltage spikes. All work includes testing  to verify effectiveness.",
+
+    "extralowvoltage": "extra low voltage",
+
+    "title7": "Telephone and Data System",
+    "description7": "Installation of structured cabling (Cat5e, Cat6, fiber optic), patch panels, network switches, routers, telephone distribution frames (MDF/IDF), and power supply for active network equipment. This includes pulling cables, terminating connectors, testing continuity, and labeling.",
+
+    "title8": "Fire Alarm System",
+    "description8": "Installation of fire alarm control panels (FACP), smoke detectors, heat detectors, manual call points, sounders, strobes, and interface modules. This involves running fire-rated cables, connecting devices to the FACP, ensuring proper zoning, and integrating with other building systems. Requires adherence to fire safety codes.",
+
+    "title9": "CCTV System",
+    "description9": "Installation of IP cameras or analog cameras, network video recorders (NVRs) or digital video recorders (DVRs), monitors, and associated power supplies. This includes running coaxial or Ethernet cables, ensuring adequate power delivery to cameras (PoE or separate power), configuring network connections, and mounting cameras for optimal coverage",
+
+    "title10": "MATV System",
+    "description10": "Installation of antennas, signal amplifiers, splitters, tap-offs, and coaxial cabling to distribute television signals (broadcast, satellite) to multiple outlets within a building. This involves proper grounding, signal balancing, and ensuring clean signal distribution.",
+
+    "title11": "Access Control System",
+    "description11": "Installation of access control panels, card readers, biometric scanners, electric strikes, magnetic locks, request to exit buttons, and associated wiring. This requires precise wiring for door locks, integration with fire alarm systems for emergency egress and power supply for all components.",
+
+    "title12": "Public Address System",
+    "description12": "Installation of amplifiers, mixers, microphones, loudspeakers, volume controls, and associated cabling. This includes running speaker cables, ensuring proper impedance matching, and providing dedicated power circuits for the amplifier rack.",
+
+    "title13": "Intrusion System",
+    "description13": "Installation of alarm control panels, motion detectors, door/window contacts, glass break detectors, sirens, strobes, and keypads. This involves running low-voltage wiring to all sensors, connecting them to the control panel, and ensuring tamper protection.",
+
+    "title14": "Building Management System",
+    "description14": "Installation of field devices (sensors, actuators), controllers (DDC controllers), network infrastructure (Ethernet, serial), and power supplies for all BMS components. This is often the most integrated system, requiring complex wiring to connect to HVAC systems, lighting controls, power monitoring, and other ELV systems. It involves running control cables, network cables, and ensuring proper communication protocols."
+  },
+
+  "Plumbing": {
+    "plumbing": "plumbing services",
+    "title1": "Water Supply System",
+    "description1": "Installation of main water lines from the source to the building. This includes laying pipes (PVC, PEX, copper), installing pressure regulators, water meters, shut-off valves, and distributing water lines to all fixtures and outlets throughout the building, ensuring adequate pressure and flow.",
+
+    "title2": "Hot Water System",
+    "description2": "Installation of water heaters (tank, tankless, solar, heat pump), hot water supply lines, mixing valves, and recirculation lines if required. This involves connecting the hot water heater to the cold water supply and distributing hot water to all points of use (sinks, showers),ensuring proper insulation and safety relief.",
+
+    "title3": "Rain Water Drainage System",
+    "description3": "Installation of gutters, downspouts, roof drains, and underground drainage pipes to collect rainwater from roofs and other surfaces. This includes connecting these pipes to storm sewers, retention ponds, or rainwater harvesting systems, ensuring proper slopes for gravity drainage and preventing water ingress into the building.",
+
+    "title4": "Soil, Waste and Vent System",
+    "description4": "Installation of drainage pipes for \"black water\" (from toilets), \"grey water\" (from sinks, showers, laundry), and a comprehensive vent system. This involves creating proper traps at fixtures, sloping drain lines for gravity flow, connecting to main waste stacks, and installing vent pipes to the outside atmosphere to prevent siphonage and allow proper drainage, all leading to the public sewer system or septic tank.",
+
+    "title5": "Sanitary Fixture",
+    "description5": "Installation and connection of various plumbing fixtures such as toilets, sinks, bathtubs, showers, bidets, and urinals. This includes connecting the hot and cold water supply lines, waste drain lines, and ensuring proper sealing and functionality of each fixture.",
+
+    "title6": "Fire Fitting System",
+    "description6": "Installation of dedicated piping networks for fire suppression. This includes connecting to a dedicated water supply (often with pumps and tanks), installing sprinkler heads, standpipes, fire hydrants, control valves (alarm valves, check valves), and test points. This system is designed to deliver water quickly and effectively in case of fire, requiring adherence to strict fire codes.",
+
+    "title7": "Kitchen Gas Suppression System",
+    "description7": "Installation of gas lines to deliver suppression agents (CO2, wet chemical) to specific nozzles located above cooking equipment. This involves precise piping and nozzle placement connected to a central cylinder and activation system. While not strictly water plumbing, it involves pipefitting for gas distribution.",
+
+    "title8": "Swimming Pool System",
+    "description8": "Installation of pipes for water circulation, filtration, heating, and chemical treatment within the pool. This includes connecting skimmers, main drains, return jets, pumps, filters, heaters, chlorinators, sanitizers, and backwash lines, ensuring proper hydraulic balance for water quality and clarity",
+
+    "title9": "Automatic Irrigation System",
+    "description9": "Installation of water supply lines, manifold assemblies, control valves, irrigation controllers, and various types of sprinkler heads or drip emitters. This involves laying out the system based on landscape design, connecting to a water source, and ensuring even water distribution for landscaping.",
+
+    "title10": "Water Treatment System",
+    "description10": "Installation of water filters (sediment, carbon), water softeners, UV purifiers, reverse osmosis (RO) systems, and associated piping and bypass valves. This involves integrating these units into the main water supply line, often at the point of entry or specific points of use, to improve water quality."
+  },
+
+  "Footer": {
+    "AboutUs": "About Us",
+    "description1": "ALPHA MSH Co., LTD is a registered Cambodian company providing expert Mechanical, Electrical, Plumbing, and Fire Fighting (MEPF) system installations",
+    "whoweare": "Who We Are",
+    "speechfromceo": "Speech from CEO",
+    "mission&vision": "Mission & Vision",
+    "teammembers": "Team Members",
+    "OurServices": "Our Services",
+    "MechanicalServices": "Mechanical Services",
+    "ElectricalServices": "Electrical Services",
+    "PlumbingServices": "Plumbing Services",
+    "OurProject": "Our Project",
+    "InProgress": "In Progress",
+    "Completed": "Completed",
+    "Future": "Future",
+    "Contact": "Contact",
+    "description2": "2023 ALPHA MSH Co., LTD. All rights reserved."
+  }
+}

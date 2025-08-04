@@ -17,6 +17,7 @@ import {
 import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
+import SwitchLanguages from "./SwitchLanguages";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -93,7 +94,11 @@ function Navbar() {
     >
       <div className="w-full max-w-6xl mx-auto flex flex-row justify-between items-center">
         <a className="w-1/3 h-3/4 md:w-1/4 md:h-3/4" href="/">
-          <img src="logo.png" alt="logo" className="w-full h-full object-fit" />
+          <img
+            src="/logo.png"
+            alt="logo"
+            className="w-full h-full object-fit"
+          />
         </a>
         <div className="hidden lg:block z-100">
           <NavigationMenu viewport={false}>
@@ -236,13 +241,8 @@ function Navbar() {
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
-              <div className="hidden lg:block ">
-                <img
-                  src="kh.svg"
-                  alt=""
-                  className="object-contain w-16 h-10 rounded-md p-1 hover:scale-110 transition-all duration-300 ease-in-out hover:bg-gray-200"
-                />
-              </div>
+              {/* Language Switcher */}
+              <SwitchLanguages />
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -431,11 +431,8 @@ function Navbar() {
               </div>
             </div>
           )}
-          <img
-            src="kh.svg"
-            alt=""
-            className="object-contain w-14 h-8 md:w-12 md:h-7 rounded-md p-1 hover:scale-110 transition-all duration-300 ease-in-out hover:bg-gray-200"
-          />
+          {/* Language Switch */}
+          <SwitchLanguages />
         </div>
       </div>
     </div>
