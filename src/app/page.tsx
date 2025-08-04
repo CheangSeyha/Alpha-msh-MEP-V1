@@ -3,9 +3,8 @@ import Footer from "@/components/Alpha/Footer";
 import HeroSlider from "@/components/Alpha/HeroSlider";
 import Navbar from "@/components/Alpha/Navbar";
 import Project from "@/components/Alpha/Project";
-import RealImpact from "@/components/Alpha/RealImpact";
+// import RealImpact from "@/components/Alpha/RealImpact";
 import Services from "@/components/Alpha/Services";
-import { FaArrowRight } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -29,9 +28,9 @@ export default function Home() {
             </div>
             <Services />
           </div>
-          <div>
+          {/* <div>
             <RealImpact />
-          </div>
+          </div> */}
           <div>
             <Project />
           </div>
