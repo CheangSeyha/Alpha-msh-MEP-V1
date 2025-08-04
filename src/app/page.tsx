@@ -7,6 +7,7 @@ import RealImpact from "@/components/Alpha/RealImpact";
 import ProblemSolving from "@/components/Alpha/ProblemSolving";
 import Services from "@/components/Alpha/Services";
 import { FaArrowRight } from "react-icons/fa";
+import NewsEvents from "@/components/Alpha/NewsEvents";
 
 export default function Home() {
   return (
@@ -43,6 +44,9 @@ export default function Home() {
           </div>
           <div>
             <Project />
+          </div>
+          <div>
+            <NewsEvents />
           </div>
         </section>
       </main>

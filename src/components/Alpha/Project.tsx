@@ -6,7 +6,7 @@ function Project() {
         <div className='max-w-6xl mx-auto p-4 md:p-2 md:px-4.5 lg:p-2.5'>
             <h2 className=' text-4xl font-bold font-exo mb-6'>Our Projects</h2>
             <p className=' text-lg mb-8'>
-            Explore our diverse portfolio showcasing successful MEP projects across various sectors.
+            Explore our diverse portfolio showcasing successful civil, architectural, and MEP projects across various sectors.
             </p> 
             <div className='max-w-full flex flex-wrap gap-6'>
                 <div className="relative md:w-[500px] bg-cover bg-center font-exo overflow-hidden">
