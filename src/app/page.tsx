@@ -6,6 +6,8 @@ import Project from "@/components/Alpha/Project";
 import RealImpact from "@/components/Alpha/RealImpact";
 import ProblemSolving from "@/components/Alpha/ProblemSolving";
 import Services from "@/components/Alpha/Services";
+import { FaArrowRight } from "react-icons/fa";
+import NewsEvents from "@/components/Alpha/NewsEvents";
 import PartnershipSlider from "@/components/Alpha/PartnershipSwiper";
 
 export default function Home() {
@@ -62,6 +64,9 @@ export default function Home() {
               <div className="absolute bottom-0 left-1 w-58 h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"></div>
             </div>
             <PartnershipSlider />
+          </div>
+          <div>
+            <NewsEvents />
           </div>
         </section>
       </main>

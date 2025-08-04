@@ -7,7 +7,7 @@ function RealImpact() {
       <div className="w-full flex flex-col items-center justify-center gap-3 px-3">
         <h2 className="text-4xl font-bold font-poppins">Why Choose Us?</h2>
         <p className="text-center text-lg">
-          Complete MEP services from design to execution — all under one roof.
+          Complete Civil, Architectural, and MEP services from design to execution — all under one roof.
         </p>
       </div>
       <div className="w-full flex flex-wrap items-center justify-evenly mt-10 p-4 gap-x-10 gap-y-12">
