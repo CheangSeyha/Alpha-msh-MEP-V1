@@ -28,7 +28,7 @@ function Project() {
               </div>
             </div>
             <div className="absolute top-5 right-10 transform">
-              <div className="backdrop-blur-md bg-white/20 px-6 rounded-full shadow-lg text-center">
+              <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
                 <a href="/Future" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-300">
                   See More
                 </a>
@@ -53,7 +53,7 @@ function Project() {
               </div>
             </div>
             <div className="absolute top-5 right-10 transform">
-              <div className="backdrop-blur-md bg-white/20 px-6 rounded-full shadow-lg text-center">
+              <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
                 <a href="/Future" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-300">
                   See More
                 </a>
@@ -77,7 +77,7 @@ function Project() {
               </div>
             </div>
             <div className="absolute top-5 right-10 transform">
-              <div className="backdrop-blur-md bg-white/20 px-6 rounded-full shadow-lg text-center">
+              <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
                 <a href="/Future" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-300">
                   See More
                 </a>
