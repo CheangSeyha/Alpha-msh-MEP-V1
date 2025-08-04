@@ -9,7 +9,7 @@ const partners = [
   { name: "Aba", logo: "/Slide/ABA-Logo.webp" },
   { name: "BD_logo", logo: "/Slide/bd-logo.png" },
   { name: "Chipmong", logo: "/Slide/Chipmong-logo.png" },
-  { name: "Woori Bank", logo: "/Slide/woori-logo.webp" },
+  { name: "Woori Bank", logo: "/Slide/Woori-logo.webp" },
 ];
 
 export default function PartnershipSlider() {
