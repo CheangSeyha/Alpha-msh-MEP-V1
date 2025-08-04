@@ -2,6 +2,8 @@
 import Footer from "@/components/Alpha/Footer";
 import HeroSlider from "@/components/Alpha/HeroSlider";
 import Navbar from "@/components/Alpha/Navbar";
+import Project from "@/components/Alpha/Project";
+import RealImpact from "@/components/Alpha/RealImpact";
 import Services from "@/components/Alpha/Services";
 import { FaArrowRight } from "react-icons/fa";
 
@@ -26,6 +28,12 @@ export default function Home() {
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-42 h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"></div>
             </div>
             <Services />
+          </div>
+          <div>
+            <RealImpact />
+          </div>
+          <div>
+            <Project />
           </div>
         </section>
       </main>
