@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className="relative w-full mt-20">
       <img
-        src="worldMap.jpg"
+        src="/worldMap.jpg"
         alt="Background"
         className="w-full h-[550px] max-[530px]:hidden object-cover blur-xs"
       />
@@ -24,7 +24,7 @@ function Footer() {
         <div className="w-full flex min-[665px]:max-[970px]:flex-col max-[665px]:flex max-[665px]:justify-between max-[970px]:justify-center max-[970px]:items-center max-[970px]:gap-y-4 max-[970px]:mt-4 justify-between p-4">
           <a href="/">
             <img
-              src="logo.png"
+              src="/logo.png"
               alt="Alpha MSH logo"
               className="w-[16vw] max-[950px]:w-[200px] h-auto object-contain"
             />

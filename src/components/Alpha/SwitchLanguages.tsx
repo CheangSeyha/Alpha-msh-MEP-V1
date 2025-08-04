@@ -44,7 +44,7 @@ function SwitchLanguages({ onChange }: { onChange?: (lang: string) => void }) {
     <div>
       <button onClick={handleSwitch} title={`Switch to next language`}>
         <img
-          className="object-contain w-[60px] max-w-full max-[1230px]:w-[50px] max-[768px]:w-[60px] transition-all duration-500 ease-in-out rounded-xs aspect-4/3"
+          className="object-contain mt-1.5 lg:mt-2 w-14 h-8 lg:w-16 lg:h-10 rounded-md p-1 hover:scale-110 transition-all duration-300 ease-in-out hover:bg-gray-200"
           src={current?.flag}
           alt={current?.label}
         />
