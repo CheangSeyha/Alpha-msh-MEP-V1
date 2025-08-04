@@ -12,7 +12,7 @@ function Footer() {
         alt="Background"
         className="w-full h-[550px] max-[530px]:hidden object-cover blur-xs"
       />
-      <div className="absolute top-0 w-full footer-content bg-blue-500 flex items-center justify-between px-8 max-[530px]:hidden">
+      <div className="absolute top-0 w-full footer-content bg-[#121D2F]  flex items-center justify-between px-8 max-[530px]:hidden">
         <div className="flex max-[1115px]:flex-col max-[1115px]:space-y-2 justify-evenly items-center w-full py-10">
           <p className="text-white text-3xl max-[700px]:text-xl font-extrabold font-poppins">
             Get in touch with one of our MEP engineers
@@ -120,7 +120,7 @@ function Footer() {
           © 2023 Alpha MSH Co., LTD. All rights reserved.
         </p>
       </div>
-      <div className="max-[530px]:hidden  w-full h-4 bg-blue-600"></div>
+      <div className="max-[530px]:hidden  w-full h-4 bg-[#121D2F]"></div>
 
       {/* for mobile */}
       <div className="relative w-full min-[530px]:hidden bg-gray-300">

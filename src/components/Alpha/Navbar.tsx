@@ -92,9 +92,9 @@ function Navbar() {
       id="navigation"
     >
       <div className="w-full max-w-6xl mx-auto flex flex-row justify-between items-center">
-        <div className="w-1/3 h-3/4 md:w-1/4 md:h-3/4">
+        <a className="w-1/3 h-3/4 md:w-1/4 md:h-3/4" href="/">
           <img src="logo.png" alt="logo" className="w-full h-full object-fit" />
-        </div>
+        </a>
         <div className="hidden lg:block z-100">
           <NavigationMenu viewport={false}>
             <NavigationMenuList>
