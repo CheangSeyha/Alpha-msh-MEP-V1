@@ -2,7 +2,7 @@
 import Footer from "@/components/Alpha/Footer";
 import HeroSlider from "@/components/Alpha/HeroSlider";
 import Navbar from "@/components/Alpha/Navbar";
-import Project from "@/components/Alpha/Project";
+// import Project from "@/components/Alpha/Project";
 // import RealImpact from "@/components/Alpha/RealImpact";
 import Services from "@/components/Alpha/Services";
 
@@ -31,9 +31,9 @@ export default function Home() {
           {/* <div>
             <RealImpact />
           </div> */}
-          <div>
+          {/* <div>
             <Project />
-          </div>
+          </div> */}
         </section>
       </main>
       <Footer />
