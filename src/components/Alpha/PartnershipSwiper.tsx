@@ -9,7 +9,7 @@ const partners = [
   { name: "Aba", logo: "/Slide/ABA-Logo.webp" },
   { name: "BD_logo", logo: "/Slide/bd-logo.png" },
   { name: "Chipmong", logo: "/Slide/Chipmong-logo.png" },
-  { name: "Woori Bank", logo: "/Slide/Woori-logo.webp" },
+  { name: "Woori Bank", logo: "/Slide/wooriBank.png" },
 ];
 
 export default function PartnershipSlider() {
@@ -37,9 +37,9 @@ export default function PartnershipSlider() {
             <Image
               src={partner.logo}
               alt={partner.name}
-              width={200}
-              height={200}
-              className="w-40 h-40 object-contain"
+              width={300}
+              height={300}
+              className="w-60 h-60 object-contain"
             />
           </SwiperSlide>
         ))}

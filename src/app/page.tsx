@@ -55,16 +55,18 @@ export default function Home() {
         </section>
 
         {/* Partnership Slider */}
-        <section>
+        <section className="bg-blue-500/10">
           <div className="max-w-6xl flex flex-col gap-5 mx-auto mt-10 p-4 md:p-2 md:px-4.5 lg:p-2.5">
             <div className="relative inline-block pb-1">
-              <h2 className="text-start text-3xl font-bold font-exo relative z-10">
+              <h2 className="text-start text-3xl text-black font-bold font-exo relative z-10">
                 Our Partnerships
               </h2>
               <div className="absolute bottom-0 left-1 w-58 h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"></div>
             </div>
             <PartnershipSlider />
           </div>
+        </section>
+        <section>
           <div>
             <NewsEvents />
           </div>
