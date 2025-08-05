@@ -2,6 +2,7 @@ import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { BorderBeam } from "../magicui/border-beam";
 import { useRouter } from "next/navigation";
+import { motion } from "framer-motion";
 
 const OurServices = [
   {
@@ -42,6 +43,19 @@ const OurServices = [
   },
 ];
 
+const serviceVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: i * 0.3,
+      duration: 0.8,
+      ease: "easeOut",
+    },
+  }),
+};
+
 function Services() {
   const router = useRouter();
   const handleServiceClick = (url: string) => {
@@ -52,18 +66,31 @@ function Services() {
       <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
         <div className="w-full flex flex-col gap-10 md:gap-24 mt-10 mb-10">
           {OurServices.map((item, index) => (
-            <div
+            <motion.div
               key={index}
               className={`flex flex-col md:flex-row ${
                 index === 1 || index === 3 ? "md:flex-row-reverse" : ""
               } gap-2 md:gap-12`}
+              custom={index}
+              variants={serviceVariants as any}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
             >
-              <div className="relative w-full md:w-3/4 lg:w-1/2 h-60 overflow-hidden rounded-2xl hover:scale-105 transition-transform duration-300 ease-in-out p-4">
+              {/* Image Container */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.8, delay: index * 0.3 }}
+                viewport={{ once: true }}
+                className="relative w-full md:w-3/4 lg:w-1/2 h-60 overflow-hidden rounded-2xl hover:scale-105 transition-transform duration-300 ease-in-out p-4"
+              >
                 <img
                   src={item.img}
                   alt={item.title}
                   className="w-full h-full object-cover rounded-2xl"
                 />
+                {/* BorderBeam Effects */}
                 <BorderBeam
                   duration={6}
                   size={400}
@@ -76,9 +103,16 @@ function Services() {
                   borderWidth={2}
                   className="absolute inset-0 from-transparent via-[#1b42ce] to-transparent"
                 />
-              </div>
+              </motion.div>
 
-              <div className="w-full flex flex-col gap-4 md:gap-6">
+              {/* Text Content */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.4 }}
+                viewport={{ once: true }}
+                className="w-full flex flex-col gap-4 md:gap-6"
+              >
                 <h2 className="text-start text-xl md:text-2xl font-bold font-exo mt-2">
                   {item.title}
                 </h2>
@@ -94,8 +128,8 @@ function Services() {
                     <FaArrowRight className="w-4 h-4 ml-2" />
                   </button>
                 </div>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
           ))}
         </div>
       </div>

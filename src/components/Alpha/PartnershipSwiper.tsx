@@ -39,7 +39,7 @@ export default function PartnershipSlider() {
               alt={partner.name}
               width={300}
               height={300}
-              className="w-60 h-60 object-contain"
+              className="w-50 h-50 object-contain"
             />
           </SwiperSlide>
         ))}

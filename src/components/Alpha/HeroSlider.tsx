@@ -45,21 +45,38 @@ export default function HeroSlider() {
       <div className="absolute bg-opacity-40 z-100" />
       {/* Text Layer */}
       <div className="w-full xl:max-w-6xl absolute z-20 top-1/2 left-[50%] lg:left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 text-white text-center p-4 md:p-2 md:px-4.5 lg:p-2.5">
-        <h1 className="text-start text-2xl font-bold font-exo mb-2 leading-tight">
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="text-start text-2xl font-bold font-exo mb-2 leading-tight"
+        >
           Welcome to
-        </h1>
-        <h1 className="text-start text-3xl md:text-[64px] font-bold font-exo mb-4 leading-tight lg:border-b-5 lg:border-[#1B42CE] pb-2 lg:w-fit">
+        </motion.h1>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="text-start text-3xl md:text-[64px] font-bold font-exo mb-4 leading-tight border-b-5 border-[#1B42CE] pb-2 w-fit"
+        >
           Alpha MSH Co., Ltd.
-        </h1>
-        <p className="text-start text-sm md:text-lg mx-auto font-exo font-medium leading-tight text-white mt-5">
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="text-start text-sm md:text-lg mx-auto font-exo font-medium leading-tight text-white mt-5"
+        >
           We are a Cambodia registered company specializing in the design and
           installation of Mechanical, Electrical, Plumbing, and Fire Fighting
           (MEPF) systems. In addition to MEPF, we provide comprehensive Civil
           and Architectural services, allowing us to deliver fully integrated
           and seamless construction solutions. With a skilled and experienced
           team, we are committed to delivering reliable and high-quality
-          services tailored to our clients’ needs
-        </p>
+          services tailored to our clients’ needs.
+        </motion.p>
         <div className="flex flex-col sm:flex-row gap-2 md:gap-5 mt-5 md:mt-8 xl:mt-5">
           <motion.button
             whileHover="hover"

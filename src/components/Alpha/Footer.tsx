@@ -125,7 +125,7 @@ function Footer() {
       {/* for mobile */}
       <div className="relative w-full min-[530px]:hidden bg-gray-300">
         <img
-          src="worldMap.jpg"
+          src="/worldMap.jpg"
           alt="Background image"
           className="object-cover w-full h-[660px] blur-sm"
         />
@@ -192,7 +192,7 @@ function Footer() {
             <br />
             <a href="/">
               <img
-                src="logo.png"
+                src="/logo.png"
                 alt="Alpha MSH logo"
                 className="w-[16vw] max-[950px]:w-[200px] h-auto object-contain m-5"
               />
