@@ -1,6 +1,7 @@
 import React from "react";
 import { FaCog, FaDraftingCompass, FaHardHat } from "react-icons/fa";
 import { BorderBeam } from "../magicui/border-beam";
+import { motion } from "framer-motion";
 
 const Problem = [
   {
@@ -43,7 +44,13 @@ function ProblemSolving() {
         {Problem.map((item, index) => (
           <div key={index} className="flex-1 w-full">
             <div className="flex flex-col items-center bg-white rounded-lg p-5 h-full overflow-hidden">
-              <div className="text-4xl mb-2 p-2">{item.icon}</div>
+              <motion.div
+                className="text-4xl mb-2 p-2"
+                animate={{ rotate: index === 1 ? 360 : 0 }}
+                transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
+              >
+                {item.icon}
+              </motion.div>
               <div className="flex flex-col gap-1 mt-2 mb-2">
                 <h3 className="text-xl text-center font-bold font-exo">
                   {item.title}
