@@ -102,6 +102,41 @@ export default function HeroSlider() {
             whileHover="hover"
             className="min-[1440px]:hidden w-fit  flex items-center bg-[#1b42ce] text-white py-2.5 px-5 rounded-lg  transition-colors duration-300"
           >
+            <a
+              href="/1-ALPHA MSH PROFILE COMPANY 2021.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center"
+            >
+              <p className="font-exo text-base font-medium">
+                Get Company Profile
+              </p>
+              <motion.div
+                animate={{ rotate: [0, 360, -360, 0] }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "linear",
+                }}
+              >
+                <MdDownload className="w-6 h-6 ml-2" />
+              </motion.div>
+            </a>
+          </motion.button>
+        </div>
+      </div>
+
+      <div className="max-[1440px]:hidden absolute bottom-0 z-30 top-[85%] xl:right-[22.5%]">
+        <motion.button
+          whileHover="hover"
+          className="flex items-center bg-[#1b42ce] text-white py-4 px-6 rounded-lg transition-colors duration-300"
+        >
+          <a
+            href="/1-ALPHA MSH PROFILE COMPANY 2021.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center"
+          >
             <p className="font-exo text-base font-medium">
               Get Company Profile
             </p>
@@ -115,26 +150,7 @@ export default function HeroSlider() {
             >
               <MdDownload className="w-6 h-6 ml-2" />
             </motion.div>
-          </motion.button>
-        </div>
-      </div>
-
-      <div className="max-[1440px]:hidden absolute bottom-0 z-30 top-[85%] xl:right-[22.5%]">
-        <motion.button
-          whileHover="hover"
-          className="flex items-center bg-[#1b42ce] text-white py-4 px-6 rounded-lg transition-colors duration-300"
-        >
-          <p className="font-exo text-base font-medium">Get Company Profile</p>
-          <motion.div
-            animate={{ rotate: [0, 360, -360, 0] }}
-            transition={{
-              duration: 4,
-              repeat: Infinity,
-              ease: "linear",
-            }}
-          >
-            <MdDownload className="w-6 h-6 ml-2" />
-          </motion.div>
+          </a>
         </motion.button>
       </div>
     </div>
