@@ -1,43 +1,60 @@
 import React from "react";
+import { motion } from "framer-motion";
 import AnimatedCounter from "./AnimatedCounter";
 
+const blockVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { delay: i * 0.2, duration: 0.6, ease: "easeOut" },
+  }),
+};
+
 function RealImpact() {
+  const stats = [
+    { label: "Satisfied Clients", value: 180 },
+    { label: "Employees", value: 300 },
+    { label: "Years of Experience", value: 20 },
+    { label: "Projects", value: 40 },
+  ];
+
   return (
     <div className="bg-[#121D2F] py-20 flex flex-col items-center justify-center my-10">
-      <div className="w-full flex flex-col items-center justify-center gap-3 px-3">
-        <h2 className="text-4xl font-bold  text-white font-exo">Why Choose Us?</h2>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
+        className="w-full flex flex-col items-center justify-center gap-3 px-3"
+      >
+        <h2 className="text-4xl font-bold text-white font-exo">
+          Why Choose Us?
+        </h2>
         <p className="text-center text-lg text-white font-exo">
-          Complete Civil, Architectural, and MEP services from design to execution — all under one roof.
+          Complete Civil, Architectural, and MEP services from design to
+          execution — all under one roof.
         </p>
-      </div>
+      </motion.div>
+
       <div className="w-full flex flex-wrap items-center justify-evenly mt-10 p-4 gap-x-10 gap-y-12">
-        <div className="flex flex-col items-center">
-          <div className="flex text-5xl font-bold text-blue-800 font-poppins">
-            <AnimatedCounter targetNumber={180} />
-            <p>+</p>
-          </div>
-          <p className="mt-2 text-white font-exo">Satisfied Clients</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="flex text-5xl font-bold font-exo text-blue-800">
-            <AnimatedCounter targetNumber={300} />
-          </div>
-          <p className="mt-2 text-white font-exo">Employees</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="flex text-5xl font-bold text-blue-800 font-exo">
-            <AnimatedCounter targetNumber={20} />
-            <p>+</p>
-          </div>
-          <p className="mt-2 text-white font-exo">Years of Experience</p>
-        </div>
-        <div className="flex flex-col items-center">
-          <div className="flex text-5xl font-bold text-blue-800 font-exo">
-            <AnimatedCounter targetNumber={40} />
-            <p>+</p>
-          </div>
-          <p className="mt-2 font-exo text-white">Projects</p>
-        </div>
+        {stats.map((item, index) => (
+          <motion.div
+            key={index}
+            custom={index}
+            variants={blockVariants as any}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="flex flex-col items-center"
+          >
+            <div className="flex text-5xl font-bold text-blue-800 font-exo">
+              <AnimatedCounter targetNumber={item.value} />
+              {item.value !== 300 && <p>+</p>}
+            </div>
+            <p className="mt-2 text-white font-exo">{item.label}</p>
+          </motion.div>
+        ))}
       </div>
     </div>
   );
