@@ -15,9 +15,11 @@ function Footer() {
       <div className="absolute top-0 w-full footer-content bg-[#121D2F]  flex items-center justify-between px-8 max-[530px]:hidden">
         <div className="flex max-[1115px]:flex-col max-[1115px]:space-y-2 justify-evenly items-center w-full py-10">
           <p className="text-white text-3xl max-[700px]:text-xl font-extrabold font-poppins">
-            Get in touch with one of our MEP engineers
+            Get in touch with one of our consultants today!
           </p>
-          <InteractiveHoverButton>Let's Chat</InteractiveHoverButton>
+          <a href="/Contact" className="w-fit">
+            <InteractiveHoverButton>Let's Chat</InteractiveHoverButton>
+          </a>
         </div>
       </div>
       <div className="absolute top-30 min-[940px]:max-[1115px]:top-44 max-[700px]:top-40 max-[950px]:top-44 flex-col w-full  justify-center px-[10vw] max-[530px]:hidden">
@@ -51,10 +53,10 @@ function Footer() {
         <div className="w-full flex  mt-2 justify-between bg-gray-300/30 p-4 border-b-4 border-blue-600/30 gap-x-12 border-t-4 border-t-red-600/30 rounded-2xl">
           <div className="w-1/4 max-[970px]:hidden transition-all duration-500 ease-in-out min-[1360px]:text-lg">
             <span className="text-xl font-bold font-poppins">
-              ALPHA MSH Co., LTD{" "}
+              ALPHA MSH Co., LTD
             </span>
             <br />
-            is a registered Cambodian company providing expert Mechanical,
+            is a registered Cambodian company providing expert Civil, Architecture, Mechanical,
             Electrical, Plumbing, and Fire Fighting (MEPF) system installations
           </div>
           <div className="flex w-3xl justify-evenly max-[875px]:justify-between">
@@ -65,16 +67,16 @@ function Footer() {
               <br />
               <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
                 <li>
-                  <a href="">Who we are</a>
+                  <a href="/Whoweare">Who we are</a>
                 </li>
                 <li>
-                  <a href="">Speech from the CEO</a>
+                  <a href="/CEO">Speech from the CEO</a>
                 </li>
                 <li>
-                  <a href="">Vision & Mission</a>
+                  <a href="/MVC">Vision & Mission</a>
                 </li>
                 <li>
-                  <a href="">Team Members</a>
+                  <a href="/Team">Team Members</a>
                 </li>
               </ul>
             </div>
@@ -85,13 +87,13 @@ function Footer() {
               <br />
               <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
                 <li>
-                  <a href="">Mechanical Services</a>
+                  <a href="/Mechanical">Mechanical Services</a>
                 </li>
                 <li>
-                  <a href="">Electrical Services</a>
+                  <a href="/Electrical">Electrical Services</a>
                 </li>
                 <li>
-                  <a href="">Plumbing Services</a>
+                  <a href="/Plumbing">Plumbing Services</a>
                 </li>
               </ul>
             </div>
@@ -102,13 +104,13 @@ function Footer() {
               <br />
               <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
                 <li>
-                  <a href="">In Progress</a>
+                  <a href="/Completed">Completed</a>
                 </li>
                 <li>
-                  <a href="">Completed</a>
+                  <a href="/Inprogress">In Progress</a>
                 </li>
                 <li>
-                  <a href="">Future</a>
+                  <a href="/Future">Future</a>
                 </li>
               </ul>
             </div>
@@ -137,16 +139,16 @@ function Footer() {
             <br />
             <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
               <li>
-                <a href="">Who we are</a>
+                <a href="/Whoweare">Who we are</a>
               </li>
               <li>
-                <a href="">Speech from the CEO</a>
+                <a href="/CEO">Speech from the CEO</a>
               </li>
               <li>
-                <a href="">Vision & Mission</a>
+                <a href="/MVC">Vision & Mission</a>
               </li>
               <li>
-                <a href="">Team Members</a>
+                <a href="/Team">Team Members</a>
               </li>
             </ul>
           </div>
@@ -157,13 +159,13 @@ function Footer() {
             <br />
             <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
               <li>
-                <a href="">Mechanical Services</a>
+                <a href="/Mechanical">Mechanical Services</a>
               </li>
               <li>
-                <a href="">Electrical Services</a>
+                <a href="/Electrical">Electrical Services</a>
               </li>
               <li>
-                <a href="">Plumbing Services</a>
+                <a href="/Plumbing">Plumbing Services</a>
               </li>
             </ul>
           </div>
@@ -174,13 +176,13 @@ function Footer() {
             <br />
             <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
               <li>
-                <a href="">In Progress</a>
+                <a href="/Inprogress">In Progress</a>
               </li>
               <li>
-                <a href="">Completed</a>
+                <a href="/Completed">Completed</a>
               </li>
               <li>
-                <a href="">Future</a>
+                <a href="/Future">Future</a>
               </li>
             </ul>
           </div>

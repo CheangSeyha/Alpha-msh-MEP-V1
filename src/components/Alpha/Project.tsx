@@ -86,6 +86,78 @@ function Project() {
                     See More
                   </a>
                 </div>
+
+          {/* Completed Project */}
+          <div className="relative md:w-[500px] bg-cover bg-center font-exo overflow-hidden group">
+            <img
+              src="/completed.jpg"
+              alt="Project"
+              className="w-full object-cover rounded-xl shadow-md group-hover:scale-110 transition-transform duration-500 ease-in-out group-hover:brightness-75"
+            />
+            <div className="absolute bottom-0 left-0 transform">
+              <div className="backdrop-blur-md bg-white/20 p-6 rounded-xl shadow-lg text-center">
+                <a href="/Completed" className="text-4xl font-bold text-black">
+                  Completed
+                </a>
+                <p className="text-black text-center mt-2">
+                  We build with precision and care.
+                </p>
+              </div>
+            </div>
+            <div className="absolute top-5 right-10 transform">
+              <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
+                <a href="/Completed" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-1000 ease-in-out">
+                  See More
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Future Project */}
+          <div className="relative md:w-[500px] bg-cover bg-center font-exo overflow-hidden group">
+            <img
+              src="/Inprogress.jpg"
+              alt="Project"
+              className="w-full object-cover rounded-xl shadow-md group-hover:scale-110 transition-transform duration-500 ease-in-out group-hover:brightness-75"
+            />
+            <div className="absolute bottom-0 left-0 transform">
+              <div className="backdrop-blur-md bg-white/20 p-6 rounded-xl shadow-lg text-center">
+                <a href="/Inprogress" className="text-4xl font-bold text-black">
+                  In Progress
+                </a>
+                <p className="text-black text-center mt-2">
+                  We build with precision and care.
+                </p>
+              </div>
+            </div>
+            <div className="absolute top-5 right-10 transform">
+              <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
+                <a href="/Inprogress" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-1000 ease-in-out">
+                  See More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="relative md:w-[500px] bg-cover bg-center font-exo overflow-hidden group">
+            <img
+              src="/futureproject.jpg"
+              alt="Project"
+              className="w-full object-cover rounded-xl shadow-md group-hover:scale-110 transition-transform duration-500 ease-in-out group-hover:brightness-75"
+            />
+            <div className="absolute bottom-0 left-0 transform">
+              <div className="backdrop-blur-md bg-white/20 p-6 rounded-xl shadow-lg text-center">
+                <a href="/Future" className="text-4xl font-bold text-black">
+                  Future
+                </a>
+                <p className="text-black text-center mt-2">
+                  We build with precision and care.
+                </p>
+              </div>
+            </div>
+            <div className="absolute top-5 right-10 transform">
+              <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
+                <a href="/Future" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-1000 ease-in-out">
+                  See More
+                </a>
               </div>
             </motion.div>
           ))}

@@ -13,21 +13,21 @@ const items = [
   {
     title: "The Dawn of Innovation",
     description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: "pic.jpg",
+    header: "",
     className: "md:col-span-2",
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Digital Revolution",
     description: "Dive into the transformative power of technology.",
-    header: "/pic2.jpg",
+    header: "",
     className: "md:col-span-1",
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
-    header: "/pic44.jpg",
+    header: "",
     className: "md:col-span-1",
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
@@ -35,7 +35,7 @@ const items = [
     title: "The Power of Communication",
     description:
       "Understand the impact of effective communication in our lives.",
-    header: "/pic33.jpg",
+    header: "",
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
