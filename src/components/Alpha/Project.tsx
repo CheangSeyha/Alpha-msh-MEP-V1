@@ -19,7 +19,7 @@ function Project() {
             />
             <div className="absolute bottom-0 left-0 transform">
               <div className="backdrop-blur-md bg-white/20 p-6 rounded-xl shadow-lg text-center">
-                <a href="/Future" className="text-4xl font-bold text-black">
+                <a href="/Completed" className="text-4xl font-bold text-black">
                   Completed
                 </a>
                 <p className="text-black text-center mt-2">
@@ -29,7 +29,7 @@ function Project() {
             </div>
             <div className="absolute top-5 right-10 transform">
               <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
-                <a href="/Future" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-300">
+                <a href="/Completed" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-1000 ease-in-out">
                   See More
                 </a>
               </div>
@@ -44,8 +44,8 @@ function Project() {
             />
             <div className="absolute bottom-0 left-0 transform">
               <div className="backdrop-blur-md bg-white/20 p-6 rounded-xl shadow-lg text-center">
-                <a href="/Future" className="text-4xl font-bold text-black">
-                In Progress
+                <a href="/Inprogress" className="text-4xl font-bold text-black">
+                  In Progress
                 </a>
                 <p className="text-black text-center mt-2">
                   We build with precision and care.
@@ -54,7 +54,7 @@ function Project() {
             </div>
             <div className="absolute top-5 right-10 transform">
               <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
-                <a href="/Future" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-300">
+                <a href="/Inprogress" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-1000 ease-in-out">
                   See More
                 </a>
               </div>
@@ -78,7 +78,7 @@ function Project() {
             </div>
             <div className="absolute top-5 right-10 transform">
               <div className="backdrop-blur-md bg-white/20 px-6 py-2.5 rounded-full shadow-lg text-center">
-                <a href="/Future" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-300">
+                <a href="/Future" className="text-xl font-bold text-white hover:text-blue-500 group-hover:text-blue-700 transition-colors duration-1000 ease-in-out">
                   See More
                 </a>
               </div>
