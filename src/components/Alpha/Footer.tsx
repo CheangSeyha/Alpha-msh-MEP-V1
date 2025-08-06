@@ -57,7 +57,7 @@ function Footer() {
             </span>
             <br />
             is a registered Cambodian company providing expert Civil, Architecture, Mechanical,
-            Electrical, Plumbing, and Fire Fighting (MEPF) system installations
+            Electrical, and Plumbing (MEP) system installations
           </div>
           <div className="flex w-3xl justify-evenly max-[875px]:justify-between">
             <div className="w-1/4 max-[865px]:w-1/3">
@@ -94,6 +94,12 @@ function Footer() {
                 </li>
                 <li>
                   <a href="/Plumbing">Plumbing Services</a>
+                </li>
+                <li>
+                  <a href="/Civil">Civil Services</a>
+                </li>
+                <li>
+                  <a href="/Architecture">Architecture Services</a>
                 </li>
               </ul>
             </div>

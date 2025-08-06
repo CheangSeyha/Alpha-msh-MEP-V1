@@ -9,6 +9,7 @@ import Services from "@/components/Alpha/Services";
 import NewsEvents from "@/components/Alpha/NewsEvents";
 import PartnershipSlider from "@/components/Alpha/PartnershipSwiper";
 import { motion } from "framer-motion";
+import AnimatedPresence from "@/components/Alpha/AnimatedPresence";
 
 export default function Home() {
   return (
@@ -60,6 +61,11 @@ export default function Home() {
         {/* Real Impact */}
         <section>
           <RealImpact />
+        </section>
+        <section>
+          <div className=" flex flex-col justify-center items-center">
+      <AnimatedPresence />
+    </div>
         </section>
 
         {/* Projects */}
