@@ -17,7 +17,7 @@ function page() {
               alt="cambodia"
               className="object-cover w-full h-[%50]"
             />
-            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center font-poppins text-lg md:text-2xl lg:text-4xl font-bold text-black uppercase p-2 md:p-5">
+            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center font-exo text-lg md:text-2xl lg:text-4xl font-bold text-black uppercase p-2 md:p-5">
               future projects
             </h1>
           </div>

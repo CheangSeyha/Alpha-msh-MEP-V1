@@ -17,13 +17,16 @@ function page() {
               alt="cambodia"
               className="object-cover w-full h-[%50]"
             />
-            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center font-poppins text-lg md:text-2xl lg:text-4xl font-bold text-black uppercase p-2 md:p-5">
+            <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center font-exo text-lg md:text-2xl lg:text-4xl font-bold text-black uppercase p-2 md:p-5">
               In progress projects
             </h1>
           </div>
         </section>
         <section className="flex justify-center items-center text-lg ">
-          In the In progress projects page, we will showcase the projects that are currently under construction or development. This section will highlight the ongoing efforts and progress of our team in various projects.
+          In the In progress projects page, we will showcase the projects that
+          are currently under construction or development. This section will
+          highlight the ongoing efforts and progress of our team in various
+          projects.
         </section>
       </main>
       <footer>
