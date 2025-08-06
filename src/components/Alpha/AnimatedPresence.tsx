@@ -17,10 +17,10 @@ function AnimatedPresence() {
       transition={{ duration: 0.8, ease: 'easeOut' }}
       className="p-6 m-10 bg-blue-500 text-white rounded-xl shadow-lg w-fit text-3xl font-bold"
 
-      transition={{ duration: 0.8, ease: "easeOut" }}
-      className="p-6 m-10 bg-blue-500 text-white rounded-xl shadow-lg w-fit"
+      // transition={{ duration: 0.8, ease: "easeOut" }}
+      // className="p-6 m-10 bg-blue-500 text-white rounded-xl shadow-lg w-fit"
     >
-      T
+      Trustable, Reliable, and Efficient
     </motion.div>
   );
 }
