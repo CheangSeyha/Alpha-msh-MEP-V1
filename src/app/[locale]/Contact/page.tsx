@@ -24,7 +24,7 @@ function page() {
               transition={{ duration: 1.5, ease: "easeOut" }}
             />
             <motion.h1
-              className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center font-poppins text-sm md:text-2xl lg:text-4xl font-bold text-black uppercase p-2 md:p-5"
+              className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center font-exo text-sm md:text-2xl lg:text-4xl font-bold text-black uppercase p-2 md:p-5"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 1 }}
