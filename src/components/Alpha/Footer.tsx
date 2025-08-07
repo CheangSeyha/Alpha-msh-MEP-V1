@@ -1,10 +1,12 @@
-import React from "react";
+import React, { use } from "react";
 import { InteractiveHoverButton } from "../magicui/interactive-hover-button";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import { useTranslations } from "next-intl";
 
 function Footer() {
+  const t = useTranslations("Footer");
   return (
     <div className="relative w-full mt-20">
       <img
@@ -15,10 +17,10 @@ function Footer() {
       <div className="absolute top-0 w-full footer-content bg-[#121D2F]  flex items-center justify-between px-8 max-[530px]:hidden">
         <div className="flex max-[1115px]:flex-col max-[1115px]:space-y-2 justify-evenly items-center w-full py-10">
           <p className="text-white text-3xl max-[700px]:text-xl font-extrabold font-poppins">
-            Get in touch with one of our consultants today!
+            {t("text1")}
           </p>
           <a href="/Contact" className="w-fit">
-            <InteractiveHoverButton>Let's Chat</InteractiveHoverButton>
+            <InteractiveHoverButton>{t("btn")}</InteractiveHoverButton>
           </a>
         </div>
       </div>
@@ -33,8 +35,8 @@ function Footer() {
           </a>
           <div className="right-1/4 flex max-[665px]:flex-col justify-center items-center">
             <p className="font-bold font-poppins text-2xl max-[775px]:text-xl">
-              Follow us{" "}
-              <span className="max-[665px]:hidden">on Social Media</span>
+              {t("text2")}{" "}
+              <span className="max-[665px]:hidden">{t("text3")}</span>
             </p>
             <div className="w-20 h-1/5 border-b-4 border-black max-[665px]:m-4"></div>
             <div className="flex space-x-4 justify-center items-center ml-4">
@@ -53,79 +55,78 @@ function Footer() {
         <div className="w-full flex  mt-2 justify-between bg-gray-300/30 p-4 border-b-4 border-blue-600/30 gap-x-12 border-t-4 border-t-red-600/30 rounded-2xl">
           <div className="w-1/4 max-[970px]:hidden transition-all duration-500 ease-in-out min-[1360px]:text-lg">
             <span className="text-xl font-bold font-poppins">
-              ALPHA MSH Co., LTD
+              {t("namecompany")}
             </span>
             <br />
-            is a registered Cambodian company providing expert Civil, Architecture, Mechanical,
-            Electrical, and Plumbing (MEP) system installations
+            {t("description1")}
           </div>
           <div className="flex w-3xl justify-evenly max-[875px]:justify-between">
             <div className="w-1/4 max-[865px]:w-1/3">
               <span className="text-lg min-[1360px]:text-xl font-bold font-poppins">
-                About Us
+                {t("AboutUs")}
               </span>
               <br />
               <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
                 <li>
-                  <a href="/Whoweare">Who we are</a>
+                  <a href="/Whoweare">{t("whoweare")}</a>
                 </li>
                 <li>
-                  <a href="/CEO">Speech from the CEO</a>
+                  <a href="/CEO">{t("speechfromceo")}</a>
                 </li>
                 <li>
-                  <a href="/MVC">Vision & Mission</a>
+                  <a href="/MVC">{t("mission&vision")}</a>
                 </li>
                 <li>
-                  <a href="/Team">Team Members</a>
+                  <a href="/Team">{t("teammembers")}</a>
                 </li>
               </ul>
             </div>
             <div className="w-1/4 ml-4 max-[865px]:w-1/3">
               <span className="text-lg min-[1360px]:text-xl font-bold font-poppins">
-                Our Services
+                {t("OurServices")}
               </span>
               <br />
               <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
                 <li>
-                  <a href="/Mechanical">Mechanical Services</a>
+                  <a href="/Mechanical">{t("MechanicalServices")}</a>
                 </li>
                 <li>
-                  <a href="/Electrical">Electrical Services</a>
+                  <a href="/Electrical">{t("ElectricalServices")}</a>
                 </li>
                 <li>
-                  <a href="/Plumbing">Plumbing Services</a>
+                  <a href="/Plumbing">{t("PlumbingServices")}</a>
                 </li>
                 <li>
-                  <a href="/Civil">Civil Services</a>
+                  <a href="/Civil">{t("CivilServices")}</a>
                 </li>
                 <li>
-                  <a href="/Architecture">Architecture Services</a>
+                  <a href="/Architecture">{t("ArchitectureServices")}</a>
                 </li>
               </ul>
             </div>
             <div className="w-1/6 ml-4 max-[816px]:w-1/3">
               <span className="text-lg min-[1360px]:text-xl font-bold font-poppins">
-                Our Project
+                {t("OurProject")}
               </span>
               <br />
               <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
                 <li>
-                  <a href="/Completed">Completed</a>
+                  <a href="/Completed">{t("Completed")}</a>
                 </li>
                 <li>
-                  <a href="/Inprogress">In Progress</a>
+                  <a href="/Inprogress">{t("InProgress")}</a>
                 </li>
                 <li>
-                  <a href="/Future">Future</a>
+                  <a href="/Future">{t("Future")}</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </div>
-      <div className="max-[530px]:hidden">
+      <div className="max-[530px]:hidden max-lg:mt-10">
         <p className="text-center text-gray-600 p-4 font-poppins">
-          © 2023 Alpha MSH Co., LTD. All rights reserved.
+          {t("description2")}
         </p>
       </div>
       <div className="max-[530px]:hidden  w-full h-4 bg-[#121D2F]"></div>
@@ -135,67 +136,73 @@ function Footer() {
         <img
           src="/worldMap.jpg"
           alt="Background image"
-          className="object-cover w-full h-[660px] blur-sm"
+          className="object-cover w-full h-[750px] blur-sm"
         />
         <div className="absolute top-0 flex flex-wrap gap-y-8 gap-x-16 p-4">
           <div className="w-fit">
             <span className="text-lg min-[1360px]:text-xl font-bold font-poppins">
-              About Us
+              {t("AboutUs")}
             </span>
             <br />
             <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
               <li>
-                <a href="/Whoweare">Who we are</a>
+                <a href="/Whoweare">{t("whoweare")}</a>
               </li>
               <li>
-                <a href="/CEO">Speech from the CEO</a>
+                <a href="/CEO">{t("speechfromceo")}</a>
               </li>
               <li>
-                <a href="/MVC">Vision & Mission</a>
+                <a href="/MVC">{t("mission&vision")}</a>
               </li>
               <li>
-                <a href="/Team">Team Members</a>
+                <a href="/Team">{t("teammembers")}</a>
               </li>
             </ul>
           </div>
           <div className="w-fit">
             <span className="text-lg min-[1360px]:text-xl font-bold font-poppins">
-              Our Services
+              {t("OurServices")}
             </span>
             <br />
             <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
               <li>
-                <a href="/Mechanical">Mechanical Services</a>
+                <a href="/Mechanical">{t("MechanicalServices")}</a>
               </li>
               <li>
-                <a href="/Electrical">Electrical Services</a>
+                <a href="/Electrical">{t("ElectricalServices")}</a>
               </li>
               <li>
-                <a href="/Plumbing">Plumbing Services</a>
+                <a href="/Plumbing">{t("PlumbingServices")}</a>
+              </li>
+              <li>
+                <a href="/Civil">{t("CivilServices")}</a>
+              </li>
+              <li>
+                <a href="/Architecture">{t("ArchitectureServices")}</a>
               </li>
             </ul>
           </div>
           <div className="w-fit">
             <span className="text-lg min-[1360px]:text-xl font-bold font-poppins">
-              Our Project
+              {t("OurProject")}
             </span>
             <br />
             <ul className="ml-2 mt-3 space-y-1 min-[1360px]:text-lg">
               <li>
-                <a href="/Inprogress">In Progress</a>
+                <a href="/Completed">{t("Completed")}</a>
               </li>
               <li>
-                <a href="/Completed">Completed</a>
+                <a href="/Inprogress">{t("InProgress")}</a>
               </li>
               <li>
-                <a href="/Future">Future</a>
+                <a href="/Future">{t("Future")}</a>
               </li>
             </ul>
           </div>
           <div className="w-full gap-y-6">
             {/* <div> */}
             <span className="text-lg min-[1360px]:text-xl font-bold font-poppins">
-              Our Company
+              {t("company")}
             </span>
             <br />
             <a href="/">
@@ -217,8 +224,8 @@ function Footer() {
                 <FaLinkedin className="max-[775px]:w-8 max-[775px]:h-8 hover:rotate-12 hover:scale-125 hover:text-blue-700" />
               </a>
             </div>
-            <p className="text-center text-sm text-gray-600 p-4 mt-8 font-poppins">
-              © 2023 Alpha MSH Co., LTD. All rights reserved.
+            <p className="text-center text-sm text-gray-600 mt-8 font-poppins">
+              {t("description2")}
             </p>
           </div>
         </div>

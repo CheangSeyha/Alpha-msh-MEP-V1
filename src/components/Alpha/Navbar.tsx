@@ -18,8 +18,10 @@ import Link from "next/link";
 import { IoMdClose } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import SwitchLanguages from "./SwitchLanguages";
+import { useTranslations } from "next-intl";
 
 function Navbar() {
+  const t = useTranslations("Navbar");
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -89,7 +91,7 @@ function Navbar() {
   const handleOpen = () => setIsOpen((prev) => !prev);
   return (
     <div
-      className="w-full mx-auto flex flex-row justify-center items-center fixed top-0 right-0 left-0 p-4 md:p-2 md:px-4.5 lg:p-2.5 z-50 opacity-100"
+      className="w-full mx-auto flex flex-row justify-center items-center fixed top-0 right-0 left-0 p-4 md:p-2 md:px-4.5 lg:p-2.5 z-100 opacity-100"
       id="navigation"
     >
       <div className="w-full max-w-6xl mx-auto flex flex-row justify-between items-center">
@@ -112,36 +114,36 @@ function Navbar() {
                     href="/"
                     className="font-exo font-semibold text-[#1B42CE]"
                   >
-                    Home
+                    {t("Home")}
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="font-exo font-semibold text-[#1B42CE]">
-                  About us
+                  {t("About")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[200px] gap-4">
                     <li>
                       <NavigationMenuLink asChild>
                         <Link href="/Whoweare" className="font-exo font-medium">
-                          Who we are
+                          {t("whoweare")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <Link href="/CEO" className="font-exo font-medium">
-                          Speech from CEO
+                          {t("speechfromceo")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <Link href="/MVC" className="font-exo font-medium">
-                          Mission & Vision
+                          {t("mission&vision")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <Link href="/Team" className="font-exo font-medium">
-                          Team members
+                          {t("team")}
                         </Link>
                       </NavigationMenuLink>
                     </li>
@@ -150,7 +152,7 @@ function Navbar() {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="font-exo font-semibold text-[#1B42CE]">
-                  Our Services
+                  {t("Services")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[200px] gap-4">
@@ -160,7 +162,7 @@ function Navbar() {
                           href="/Mechanical"
                           className="font-exo font-medium"
                         >
-                          Mechanical Services
+                          {t("MechanicalServices")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
@@ -168,17 +170,17 @@ function Navbar() {
                           href="/Electrical"
                           className="font-exo font-medium"
                         >
-                          Electrical Services
+                          {t("ElectricalServices")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <Link href="/Plumbing" className="font-exo font-medium">
-                          Plumbing Services
+                          {t("PlumbingServices")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <Link href="/Civil" className="font-exo font-medium">
-                          Civil Services
+                          {t("CivilServices")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
@@ -186,7 +188,7 @@ function Navbar() {
                           href="/Architecture"
                           className="font-exo font-medium"
                         >
-                          Architecture Services
+                          {t("ArchitectureServices")}
                         </Link>
                       </NavigationMenuLink>
                     </li>
@@ -196,7 +198,7 @@ function Navbar() {
 
               <NavigationMenuItem>
                 <NavigationMenuTrigger className="font-exo font-semibold text-[#1B42CE]">
-                  Our projects
+                  {t("Projects")}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[200px] gap-4">
@@ -206,7 +208,7 @@ function Navbar() {
                           href="/Completed"
                           className="font-exo font-medium"
                         >
-                          Completed
+                          {t("completed")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
@@ -214,12 +216,12 @@ function Navbar() {
                           href="/Inprogress"
                           className="font-exo font-medium"
                         >
-                          Inprogress
+                          {t("inprogress")}
                         </Link>
                       </NavigationMenuLink>
                       <NavigationMenuLink asChild>
                         <Link href="/Future" className="font-exo font-medium">
-                          Future
+                          {t("future")}
                         </Link>
                       </NavigationMenuLink>
                     </li>
@@ -236,7 +238,7 @@ function Navbar() {
                     href="/Contact"
                     className="font-exo font-semibold text-[#1B42CE]"
                   >
-                    Contact
+                    {t("Contact")}
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -277,13 +279,13 @@ function Navbar() {
                       className="block font-exo text-lg font-semibold text-[#1B42CE]"
                       onClick={handleOpen}
                     >
-                      Home
+                      {t("Home")}
                     </Link>
 
                     <Accordion type="single" collapsible>
                       <AccordionItem value="about">
                         <AccordionTrigger className="font-exo font-semibold text-[#1B42CE]">
-                          About us
+                          {t("About")}
                         </AccordionTrigger>
                         <AccordionContent>
                           <ul className="space-y-2">
@@ -293,7 +295,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Who we are
+                                {t("whoweare")}
                               </Link>
                             </li>
                             <li>
@@ -302,7 +304,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Speech from CEO
+                                {t("speechfromceo")}
                               </Link>
                             </li>
                             <li>
@@ -311,7 +313,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Mission & Vision
+                                {t("mission&vision")}
                               </Link>
                             </li>
                             <li>
@@ -320,7 +322,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Team members
+                                {t("team")}
                               </Link>
                             </li>
                           </ul>
@@ -329,7 +331,7 @@ function Navbar() {
 
                       <AccordionItem value="services">
                         <AccordionTrigger className="font-exo font-semibold text-[#1B42CE]">
-                          Our Services
+                          {t("Services")}
                         </AccordionTrigger>
                         <AccordionContent>
                           <ul className="space-y-2">
@@ -339,7 +341,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Mechanical Services
+                                {t("MechanicalServices")}
                               </Link>
                             </li>
                             <li>
@@ -348,7 +350,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Electrical Services
+                                {t("ElectricalServices")}
                               </Link>
                             </li>
                             <li>
@@ -357,7 +359,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Plumbing Services
+                                {t("PlumbingServices")}
                               </Link>
                             </li>
                             <li>
@@ -366,7 +368,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Civil Services
+                                {t("CivilServices")}
                               </Link>
                             </li>
                             <li>
@@ -375,7 +377,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Architecture Services
+                                {t("ArchitectureServices")}
                               </Link>
                             </li>
                           </ul>
@@ -384,7 +386,7 @@ function Navbar() {
 
                       <AccordionItem value="projects">
                         <AccordionTrigger className="font-exo font-semibold text-[#1B42CE]">
-                          Our projects
+                          {t("Projects")}
                         </AccordionTrigger>
                         <AccordionContent>
                           <ul className="space-y-2">
@@ -394,7 +396,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Completed
+                                {t("completed")}
                               </Link>
                             </li>
                             <li>
@@ -403,7 +405,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Inprogress
+                                {t("inprogress")}
                               </Link>
                             </li>
                             <li>
@@ -412,7 +414,7 @@ function Navbar() {
                                 className="font-exo font-medium text-black hover:scale-110 transition-all duration-300 ease-in-out hover:text-[#1B42CE]"
                                 onClick={handleOpen}
                               >
-                                Future
+                                {t("future")}
                               </Link>
                             </li>
                           </ul>
@@ -424,7 +426,7 @@ function Navbar() {
                       className="block font-exo text-lg font-semibold text-[#1B42CE] py-1"
                       onClick={handleOpen}
                     >
-                      Contact
+                      {t("Contact")}
                     </Link>
                   </div>
                 </div>

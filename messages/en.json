@@ -1,20 +1,56 @@
 {
   "HomePage": {
-    "welcome": "Welcome to Alpha MSH Co., Ltd.",
-    "description": "We are a Cambodia-registered company specializing in the design and installation of Mechanical, Electrical, Plumbing, and Fire Fighting (MEPF) systems. With a skilled team, we deliver reliable, high-quality services across various sectors including hotels, banks, factories, residential buildings, healthcare, malls, and restaurants.",
+    "welcome": "Welcome to",
+    "welcome2": "ALPHA MSH Co., LTD",
+    "description": "  We are a Cambodia registered company specializing in the design and installation of Mechanical, Electrical, Plumbing, and Fire Fighting (MEPF) systems. In addition to MEPF, we provide comprehensive Civil and Architectural services, allowing us to deliver fully integrated and seamless construction solutions. With a skilled and experienced team, we are committed to delivering reliable and high-quality services tailored to our clients’ needs.",
+    "profilecompany": "Get Profile Company",
+
+    "problemsolving": " The Problem We're Solving",
+    "sdescription": "We ensure the integrity of every project from the ground up through Civil Engineering building strong foundations and durable structures. Our MEP services equip buildings with all critical internal systems for  safety, comfort, and functionality. Finally, our Architectural design brings the project to life, focusing on finishes and layout to create a beautiful and cohesive space.",
+    "title1": "Foundation & Structure",
+    "description1": "We ensure a project's stability and durability by expertly handling all civil works, from foundations to the structural frame.",
+    "title2": "Internal Systems & Infrastructure",
+    "description2": "We equip buildings with critical MEP systems for safety, comfort, and functionality, including HVAC, power, and plumbing",
+    "title3": "Design & Finishes",
+    "description3": "We provide comprehensive architectural design to create functional and aesthetically pleasing spaces from the exterior facade to interior finishes.",
+
+    "ourpartnership": "Our Partnerships",
     "ourprojects": "Our Projects",
+    "pdescriptions": " Explore our diverse portfolio showcasing successful civil, architectural, and MEP projects across various sectors.",
     "completed": "Completed",
+    "cdescription": "We build with precision and care",
     "inprogress": "In Progressing",
+    "idescription": "Precision under construction",
     "future": "Future",
+    "fdescription": "Planing today. Powering future",
+
     "ourservices": "Our Services",
-    "MechanicalServices": "Mechanical Services",
-    "ElectricalServices": "Electrical Services",
-    "PlumbingServices": "Plumbing Services"
+    "MechanicalServices": "Mechanical",
+    "Mdescription": "Focuses on creating a comfortable and healthy indoor environment through the design and installation of heating, ventilation, and air-conditioning (HVAC) systems.",
+    "ElectricalServices": "Electrical",
+    "Edescription": "Covers all power and technology systems. This includes both low-voltage (LV) for power distribution, lighting, and safety, and extra-low-voltage (ELV) for security, data, and building management systems.",
+    "PlumbingServices": "Plumbing",
+    "Pdescription": "Manages all water-related infrastructure, including the supply of fresh water, drainage for waste and rain, and specialized systems for fire suppression and recreational facilities.",
+    "CivilServices": "Civil",
+    "Cdescription": "Establishes the structural foundation of a building, encompassing site preparation, excavation, concrete work, and the construction of the building's main framework",
+    "ArchitectureServices": "Architecture",
+    "Adescription": "Deals with the aesthetic and functional design of the building, including the exterior façade, interior finishes, roofing, and the installation of doors, windows, and other decorative elements.",
+
+    "whychooseus": "Why Choose Us",
+    "wdescription": "Complete Civil, Architectural, and MEP services from design to execution — all under one roof.",
+    "Clients": "Satisfied Clients",
+    "employee": "Employees",
+    "experience": "Years of Experience",
+    "project": "Projects",
+
+    "new&event": "New & Events",
+    "ndescription": "Stay updated with the latest news and events in the construction and engineering industry.",
+    "btn": "See More"
   },
 
   "Contact": {
     "contactpage": "Contact",
-    "moredetails": "for more details",
+    "moredetails": "For more details",
     "Submit your enquiry here": "Submit your enquiry here",
     "Familyname": "Family name",
     "Givenname": "Given name",
@@ -85,6 +121,8 @@
     "MechanicalServices": "Mechanical Services",
     "ElectricalServices": "Electrical Services",
     "PlumbingServices": "Plumbing Services",
+    "CivilServices": "Civil Services",
+    "ArchitectureServices": "Architecture Services",
     "Contact": "Contact"
   },
 
@@ -184,7 +222,12 @@
 
   "Footer": {
     "AboutUs": "About Us",
-    "description1": "ALPHA MSH Co., LTD is a registered Cambodian company providing expert Mechanical, Electrical, Plumbing, and Fire Fighting (MEPF) system installations",
+    "text1": " Get in touch with one of our consultants today!",
+    "text2": "Follow us",
+    "text3": "on Social Media",
+    "company": "Our Company",
+    "namecompany": "ALPHA MSH Co., LTD",
+    "description1": "is a registered Cambodian company providing expert Civil, Architecture, Mechanical, Electrical, and Plumbing (MEP) system installations",
     "whoweare": "Who We Are",
     "speechfromceo": "Speech from CEO",
     "mission&vision": "Mission & Vision",
@@ -193,11 +236,14 @@
     "MechanicalServices": "Mechanical Services",
     "ElectricalServices": "Electrical Services",
     "PlumbingServices": "Plumbing Services",
+    "CivilServices": "Civil Services",
+    "ArchitectureServices": "Architecture Services",
     "OurProject": "Our Project",
     "InProgress": "In Progress",
     "Completed": "Completed",
     "Future": "Future",
     "Contact": "Contact",
-    "description2": "2023 ALPHA MSH Co., LTD. All rights reserved."
+    "description2": "© 2023 Alpha MSH Co., LTD. All rights reserved.",
+    "btn": "Let's chat"
   }
 }

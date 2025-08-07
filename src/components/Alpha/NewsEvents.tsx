@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import React from "react";
+import React, { use } from "react";
 import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 import {
   IconClipboardCopy,
@@ -8,6 +8,7 @@ import {
   IconTableColumn,
 } from "@tabler/icons-react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const items = [
   {
@@ -42,6 +43,7 @@ const items = [
 ];
 
 function NewsEvents() {
+  const t = useTranslations("HomePage");
   return (
     <div className="max-w-screen flex flex-col justify-center px-[5vw] py-20">
       <motion.div
@@ -49,18 +51,21 @@ function NewsEvents() {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="relative inline-block pb-1"
+        className="pb-1 flex justify-center"
       >
-        <h2 className="text-center text-4xl font-bold font-exo relative z-10">
-          New & Events
-        </h2>
-        <motion.div
-          initial={{ scaleX: 0 }}
-          whileInView={{ scaleX: 1 }}
-          transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-57 h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded origin-left"
-        />
+        <div className="relative inline-block text-center">
+          <h2 className="text-4xl font-bold font-exo relative pb-2 z-10">
+            {t("new&event")}
+          </h2>
+
+          <motion.div
+            initial={{ scaleX: 0 }}
+            whileInView={{ scaleX: 1 }}
+            transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="absolute bottom-0 left-1/2 -translate-x-1/2 origin-center w-full h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"
+          />
+        </div>
       </motion.div>
 
       <motion.p
@@ -70,8 +75,7 @@ function NewsEvents() {
         viewport={{ once: true }}
         className="text-center text-lg mt-4 font-light font-exo"
       >
-        Stay updated with the latest news and events in the construction and
-        engineering industry.
+        {t("ndescription")}
       </motion.p>
       {/* Placeholder for news and events content */}
       <div className="mt-8 text-center">
