@@ -10,8 +10,10 @@ import NewsEvents from "@/components/Alpha/NewsEvents";
 import PartnershipSlider from "@/components/Alpha/PartnershipSwiper";
 import { motion } from "framer-motion";
 import AnimatedPresence from "@/components/Alpha/AnimatedPresence";
+import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const t = useTranslations("HomePage");
   return (
     <div className="relative flex flex-col min-h-screen">
       {/* Navbar */}
@@ -40,20 +42,23 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative inline-block pb-1"
+              className="pb-1 flex justify-center"
             >
-              <h2 className="text-center text-4xl font-bold font-exo relative z-10">
-                Our Services
-              </h2>
+              <div className="relative inline-block text-center">
+                <h2 className="text-4xl font-bold font-exo relative pb-2 z-10">
+                  {t("ourservices")}
+                </h2>
 
-              <motion.div
-                initial={{ scaleX: 0 }}
-                whileInView={{ scaleX: 1 }}
-                transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="absolute bottom-0 left-1/2 origin-center transform -translate-x-1/2 w-52 h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"
-              ></motion.div>
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 origin-center w-full h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"
+                />
+              </div>
             </motion.div>
+
             <Services />
           </div>
         </section>
@@ -64,8 +69,8 @@ export default function Home() {
         </section>
         <section>
           <div className=" flex flex-col justify-center items-center">
-      <AnimatedPresence />
-    </div>
+            <AnimatedPresence />
+          </div>
         </section>
 
         {/* Projects */}
@@ -81,20 +86,23 @@ export default function Home() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
-              className="relative inline-block pb-1"
+              className="pb-1"
             >
-              <h2 className="text-start text-4xl font-bold font-exo relative z-10">
-                Our Partnerships
-              </h2>
+              <div className="relative inline-block text-start">
+                <h2 className="text-4xl font-bold font-exo relative pb-2 z-10">
+                  {t("ourpartnership")}
+                </h2>
 
-              <motion.div
-                initial={{ scaleX: 0 }}
-                whileInView={{ scaleX: 1 }}
-                transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="absolute bottom-0 left-36  transform -translate-x-1/2 w-70 h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"
-              ></motion.div>
+                <motion.div
+                  initial={{ scaleX: 0 }}
+                  whileInView={{ scaleX: 1 }}
+                  transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
+                  viewport={{ once: true }}
+                  className="absolute bottom-0 left-0 origin-left w-full h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"
+                />
+              </div>
             </motion.div>
+
             <PartnershipSlider />
           </div>
         </section>

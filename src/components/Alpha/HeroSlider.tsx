@@ -6,6 +6,7 @@ import "swiper/css/effect-fade";
 import { MdDownload } from "react-icons/md";
 import { FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const slides = [
   "/Video/Civil.mp4",
@@ -16,6 +17,7 @@ const slides = [
 ];
 
 export default function HeroSlider() {
+  const t = useTranslations("HomePage");
   return (
     <div className="relative w-full h-screen">
       {/* Background Swiper */}
@@ -44,38 +46,31 @@ export default function HeroSlider() {
       {/* Overlay */}
       <div className="absolute bg-opacity-40 z-100" />
       {/* Text Layer */}
-      <div className="w-full xl:max-w-6xl absolute z-20 top-1/2 left-[50%] lg:left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 text-white text-center p-4 md:p-2 md:px-4.5 lg:p-2.5">
+      <div className="w-full xl:max-w-6xl absolute z-50 top-1/2 left-[50%] lg:left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 text-white text-center p-4 md:p-2 md:px-4.5 lg:p-2.5">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="text-start text-2xl font-bold font-exo mb-2 leading-tight"
         >
-          Welcome to
+          {t("welcome")}
         </motion.h1>
 
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-start text-3xl md:text-[64px] font-bold font-exo mb-4 leading-tight border-b-5 border-[#1B42CE] pb-2 w-fit"
+          className="text-start text-2xl min-[760px]:text-5xl lg:text-[64px] font-bold font-exo mb-4 leading-tight border-b-5 border-[#1B42CE] pb-2 w-fit"
         >
-          Alpha MSH Co., Ltd.
+          {t("welcome2")}
         </motion.h1>
-
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-start text-sm md:text-lg mx-auto font-exo font-medium leading-tight text-white mt-5"
+          className="text-start text-sm md:text-lg mx-auto font-exo font-medium leading-tight text-white mt-5 px-4 py-2 rounded-md bg-black/40 backdrop-blur-sm"
         >
-          We are a Cambodia registered company specializing in the design and
-          installation of Mechanical, Electrical, Plumbing, and Fire Fighting
-          (MEPF) systems. In addition to MEPF, we provide comprehensive Civil
-          and Architectural services, allowing us to deliver fully integrated
-          and seamless construction solutions. With a skilled and experienced
-          team, we are committed to delivering reliable and high-quality
-          services tailored to our clients’ needs.
+          {t("description")}
         </motion.p>
         <div className="flex flex-col sm:flex-row gap-2 md:gap-5 mt-5 md:mt-8 xl:mt-5">
           <motion.button
@@ -87,7 +82,7 @@ export default function HeroSlider() {
             }}
             className="w-fit flex items-center bg-red-700 text-white py-2.5 px-5.5 rounded-lg transition-colors duration-300"
           >
-            <p className="font-exo text-base font-medium">Our Services</p>
+            <p className="font-exo text-base font-medium">{t("ourservices")}</p>
             <motion.div
               variants={{
                 hover: { rotate: 360 },
@@ -109,7 +104,7 @@ export default function HeroSlider() {
               className="flex items-center"
             >
               <p className="font-exo text-base font-medium">
-                Get Company Profile
+                {t("profilecompany")}
               </p>
               <motion.div
                 animate={{ rotate: [0, 360, -360, 0] }}
@@ -138,7 +133,7 @@ export default function HeroSlider() {
             className="flex items-center"
           >
             <p className="font-exo text-base font-medium">
-              Get Company Profile
+              {t("profilecompany")}
             </p>
             <motion.div
               animate={{ rotate: [0, 360, -360, 0] }}

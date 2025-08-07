@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import AnimatedCounter from "./AnimatedCounter";
+import { useTranslations } from "next-intl";
 
 const blockVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -12,11 +13,12 @@ const blockVariants = {
 };
 
 function RealImpact() {
+  const t = useTranslations("HomePage");
   const stats = [
-    { label: "Satisfied Clients", value: 180 },
-    { label: "Employees", value: 300 },
-    { label: "Years of Experience", value: 20 },
-    { label: "Projects", value: 40 },
+    { label: "Clients", value: 180 },
+    { label: "employee", value: 300 },
+    { label: "experience", value: 20 },
+    { label: "project", value: 40 },
   ];
 
   return (
@@ -29,11 +31,10 @@ function RealImpact() {
         className="w-full flex flex-col items-center justify-center gap-3 px-3"
       >
         <h2 className="text-4xl font-bold text-white font-exo">
-          Why Choose Us?
+          {t("whychooseus")}
         </h2>
         <p className="text-center text-lg text-white font-exo">
-          Complete Civil, Architectural, and MEP services from design to
-          execution — all under one roof.
+          {t("wdescription")}
         </p>
       </motion.div>
 
@@ -52,7 +53,7 @@ function RealImpact() {
               <AnimatedCounter targetNumber={item.value} />
               {item.value !== 300 && <p>+</p>}
             </div>
-            <p className="mt-2 text-white font-exo">{item.label}</p>
+            <p className="mt-2 text-white font-exo">{t(item.label)}</p>
           </motion.div>
         ))}
       </div>

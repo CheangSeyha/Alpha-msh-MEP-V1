@@ -3,42 +3,38 @@ import { FaArrowRight } from "react-icons/fa";
 import { BorderBeam } from "../magicui/border-beam";
 import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const OurServices = [
   {
-    title: "Mechanical",
+    title: "MechanicalServices",
     img: "/Services/Mechanical.jpg",
-    description:
-      "Focuses on creating a comfortable and healthy indoor environment through the design and installation of heating, ventilation, and air-conditioning (HVAC) systems.",
+    description: "Mdescription",
 
     url: "/Mechanical",
   },
   {
-    title: "Electrical",
+    title: "ElectricalServices",
     img: "/Services/Electrical.jpg",
-    description:
-      "Covers all power and technology systems. This includes both low-voltage (LV) for power distribution, lighting, and safety, and extra-low-voltage (ELV) for security, data, and building management systems.",
+    description: "Edescription",
     url: "/Electrical",
   },
   {
-    title: "Plumbing",
+    title: "PlumbingServices",
     img: "/Services/Plumbing.jpg",
-    description:
-      "Manages all water-related infrastructure, including the supply of fresh water, drainage for waste and rain, and specialized systems for fire suppression and recreational facilities.",
+    description: "Pdescription",
     url: "/Plumbing",
   },
   {
-    title: "Civil",
+    title: "CivilServices",
     img: "/Services/Civil.jpg",
-    description:
-      "Establishes the structural foundation of a building, encompassing site preparation, excavation, concrete work, and the construction of the building's main framework",
+    description: "Cdescription",
     url: "/Civil",
   },
   {
-    title: "Architecture",
+    title: "ArchitectureServices",
     img: "/Services/Architecture.jpg",
-    description:
-      " Deals with the aesthetic and functional design of the building, including the exterior façade, interior finishes, roofing, and the installation of doors, windows, and other decorative elements.",
+    description: "Adescription",
     url: "/Architecture",
   },
 ];
@@ -61,6 +57,7 @@ function Services() {
   const handleServiceClick = (url: string) => {
     router.push(url);
   };
+  const t = useTranslations("HomePage");
   return (
     <div>
       <div className="w-full flex flex-col md:flex-row items-center md:items-start justify-between gap-10">
@@ -87,7 +84,7 @@ function Services() {
               >
                 <img
                   src={item.img}
-                  alt={item.title}
+                  alt={t(item.title)}
                   className="w-full h-full object-cover rounded-2xl"
                 />
                 {/* BorderBeam Effects */}
@@ -114,17 +111,17 @@ function Services() {
                 className="w-full flex flex-col gap-4 md:gap-6"
               >
                 <h2 className="text-start text-xl md:text-2xl font-bold font-exo mt-2">
-                  {item.title}
+                  {t(item.title)}
                 </h2>
                 <p className="w-full text-xs md:text-sm lg:text-base font-medium font-exo">
-                  {item.description}
+                  {t(item.description)}
                 </p>
                 <div className="flex justify-end items-end mt-5 md:mt-8">
                   <button
                     onClick={() => handleServiceClick(item.url)}
                     className=" bg-[#1b42ce] flex items-center text-white py-2.5 px-4 rounded-lg transition-colors duration-300"
                   >
-                    <p className="font-exo text-base font-medium">See more</p>
+                    <p className="font-exo text-base font-medium">{t("btn")}</p>
                     <FaArrowRight className="w-4 h-4 ml-2" />
                   </button>
                 </div>

@@ -28,12 +28,27 @@ function Contact() {
         variants={fadeUp}
       >
         <div className="flex flex-col justify-start gap-1">
-          <div className="relative inline-block pb-2.5">
-            <h2 className="text-start text-2xl md:text-3xl text-black font-extralight uppercase font-exo relative z-10">
-              {t("moredetails")}
-            </h2>
-            <div className="absolute bottom-0 left-1 w-64 h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"></div>
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="pb-1"
+          >
+            <div className="relative inline-block text-start">
+              <h2 className="text-4xl font-light font-exo relative pb-2 z-10">
+                {t("moredetails")}
+              </h2>
+
+              <motion.div
+                initial={{ scaleX: 0 }}
+                whileInView={{ scaleX: 1 }}
+                transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="absolute bottom-0 left-0 origin-left w-full h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"
+              />
+            </div>
+          </motion.div>
           <p className="text-start text-base md:text-lg font-semibold font-exo text-black mt-1">
             {t("Submit your enquiry here")}
           </p>
