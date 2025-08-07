@@ -2,6 +2,9 @@
 import React from "react";
 import Footer from "@/components/Alpha/Footer";
 import NavBar from "@/components/Alpha/Navbar";
+import { Scroll } from "lucide-react";
+import ScrollToTop from "@/components/Alpha/ScrollToTop";
+import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 
 function page() {
   return (
@@ -32,6 +35,8 @@ function page() {
       <footer>
         <Footer />
       </footer>
+      <ScrollToTop />
+      <ScrollProgressBar />
     </div>
   );
 }

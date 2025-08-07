@@ -54,7 +54,7 @@ function NewsEvents() {
         className="pb-1 flex justify-center"
       >
         <div className="relative inline-block text-center">
-          <h2 className="text-4xl font-bold font-exo relative pb-2 z-10">
+          <h2 className="text-2xl md:text-4xl font-bold font-exo relative pb-2 z-10">
             {t("new&event")}
           </h2>
 

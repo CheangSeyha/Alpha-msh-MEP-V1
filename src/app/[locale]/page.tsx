@@ -11,6 +11,9 @@ import PartnershipSlider from "@/components/Alpha/PartnershipSwiper";
 import { motion } from "framer-motion";
 import AnimatedPresence from "@/components/Alpha/AnimatedPresence";
 import { useTranslations } from "next-intl";
+import { Scroll } from "lucide-react";
+import ScrollToTop from "@/components/Alpha/ScrollToTop";
+import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 
 export default function Home() {
   const t = useTranslations("HomePage");
@@ -45,7 +48,7 @@ export default function Home() {
               className="pb-1 flex justify-center"
             >
               <div className="relative inline-block text-center">
-                <h2 className="text-4xl font-bold font-exo relative pb-2 z-10">
+                <h2 className="text-3xl md:text-4xl font-bold font-exo relative pb-2 z-10">
                   {t("ourservices")}
                 </h2>
 
@@ -89,7 +92,7 @@ export default function Home() {
               className="pb-1"
             >
               <div className="relative inline-block text-start">
-                <h2 className="text-4xl font-bold font-exo relative pb-2 z-10">
+                <h2 className="text-3xl md:text-4xl font-bold font-exo relative pb-2 z-10">
                   {t("ourpartnership")}
                 </h2>
 
@@ -119,6 +122,9 @@ export default function Home() {
       <footer>
         <Footer />
       </footer>
+
+      <ScrollToTop />
+      <ScrollProgressBar />
     </div>
   );
 }
