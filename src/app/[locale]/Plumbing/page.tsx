@@ -2,6 +2,8 @@
 import Footer from "@/components/Alpha/Footer";
 import Navbar from "@/components/Alpha/Navbar";
 import Plumbing from "@/components/Alpha/Plumbing";
+import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
+import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import React from "react";
@@ -42,6 +44,9 @@ function page() {
       <footer>
         <Footer />
       </footer>
+
+      <ScrollToTop />
+      <ScrollProgressBar />
     </div>
   );
 }

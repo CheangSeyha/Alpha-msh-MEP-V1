@@ -2,7 +2,10 @@
 import Footer from "@/components/Alpha/Footer";
 import Mission from "@/components/Alpha/Mission";
 import Navbar from "@/components/Alpha/Navbar";
+import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
+import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import { motion } from "framer-motion";
+import { Scroll } from "lucide-react";
 import { useTranslations } from "next-intl";
 import React from "react";
 
@@ -42,6 +45,9 @@ function page() {
       <footer>
         <Footer />
       </footer>
+
+      <ScrollToTop />
+      <ScrollProgressBar />
     </div>
   );
 }

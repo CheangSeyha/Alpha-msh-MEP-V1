@@ -1,6 +1,9 @@
 "use client";
 import Footer from "@/components/Alpha/Footer";
 import NavBar from "@/components/Alpha/Navbar";
+import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
+import ScrollToTop from "@/components/Alpha/ScrollToTop";
+import { Scroll } from "lucide-react";
 import React from "react";
 
 function page() {
@@ -30,6 +33,8 @@ function page() {
       <footer>
         <Footer />
       </footer>
+      <ScrollToTop />
+      <ScrollProgressBar />
     </div>
   );
 }

@@ -51,7 +51,7 @@ export default function HeroSlider() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-start text-2xl font-bold font-exo mb-2 leading-tight"
+          className="text-start text-lg sm:text-xl md:text-2xl lg:text-4xl font-bold font-exo mb-2 leading-tight"
         >
           {t("welcome")}
         </motion.h1>
@@ -60,7 +60,7 @@ export default function HeroSlider() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-start text-2xl min-[760px]:text-5xl lg:text-[64px] font-bold font-exo mb-4 leading-tight border-b-5 border-[#1B42CE] pb-2 w-fit"
+          className="text-start text-[22px] sm:text-4xl md:text-5xl lg:text-[64px] font-bold font-exo mb-4 leading-tight border-b-5 border-[#1B42CE] pb-2 w-fit"
         >
           {t("welcome2")}
         </motion.h1>
@@ -68,7 +68,7 @@ export default function HeroSlider() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-start text-sm md:text-lg mx-auto font-exo font-medium leading-tight text-white mt-5 px-4 py-2 rounded-md bg-black/40 backdrop-blur-sm"
+          className="text-start text-sm md:text-lg mx-auto font-exo font-medium leading-tight text-white mt-5 px-4 py-2 rounded-md bg-black/10 backdrop-blur-sm"
         >
           {t("description")}
         </motion.p>
