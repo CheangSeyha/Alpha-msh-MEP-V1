@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Scroll } from "lucide-react";
 import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
+import { useTranslations } from "next-intl";
 
 function page() {
   const cardsData = [
@@ -163,7 +164,7 @@ function page() {
       end: "N/A",
     },
   ];
-
+  const t = useTranslations("completed");
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
       <header className="z-50">
@@ -186,8 +187,7 @@ function page() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 1 }}
             >
-              {/* {t("electrical")} */}
-              Completed Projects
+              {t("completed")}
             </motion.h1>
           </div>
         </section>

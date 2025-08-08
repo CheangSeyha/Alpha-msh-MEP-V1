@@ -4,9 +4,11 @@ import NavBar from "@/components/Alpha/Navbar";
 import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import { Scroll } from "lucide-react";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 function page() {
+  const t = useTranslations("future");
   return (
     <div className="flex flex-col min-h-screen">
       <header className="z-50">
@@ -21,7 +23,7 @@ function page() {
               className="object-cover w-full h-[%50]"
             />
             <h1 className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center font-exo text-lg md:text-2xl lg:text-4xl font-bold text-black uppercase p-2 md:p-5">
-              future projects
+              {t("future")}
             </h1>
           </div>
         </section>

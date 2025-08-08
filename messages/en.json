@@ -89,7 +89,8 @@
   },
 
   "inprogressing": {
-    "inprogressing": "In Progressing"
+    "inprogressing": "In Progressing",
+    "text": "  In the In progress projects page, we will showcase the projects that are currently under construction or development. This section will highlight the ongoing efforts and progress of our team in various projects."
   },
 
   "completed": {
