@@ -35,6 +35,11 @@ export default function Home() {
             <ProblemSolving />
           </div>
         </section>
+        <section>
+          <div className=" flex flex-col justify-center items-center">
+            <AnimatedPresence />
+          </div>
+        </section>
 
         <section className="bg-[#121D2F] py-20">
           <div className=" flex flex-col justify-center items-center">
