@@ -1,5 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import React, { useRef } from "react";
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
 function AnimatedPresence() {
   const ref = useRef(null);
@@ -14,12 +15,23 @@ function AnimatedPresence() {
       animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
       initial={{ x: -200, opacity: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
-      className="p-4 m-8 bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 text-white rounded-tl-3xl rounded-br-3xl shadow-lg w-fit  text-base md:text-3xl font-exo font-bold"
-
-      // transition={{ duration: 0.8, ease: "easeOut" }}
-      // className="p-6 m-10 bg-blue-500 text-white rounded-xl shadow-lg w-fit"
+      className="font-exo font-bold flex flex-wrap items-center justify-center gap-5 text-center px-5 lg:p-10"
     >
-      Trustable, Reliable, Efficient
+      <FaQuoteLeft
+        className="text-white"
+        style={{
+          width: "clamp(3rem, 5vw, 7rem)",
+          height: "clamp(3rem, 5vw, 7rem)",
+        }}
+      />
+      <span
+        className="text-white uppercase leading-tight"
+        style={{
+          fontSize: "clamp(2rem, 4vw, 5rem)",
+        }}
+      >
+        Trustable, Reliable, Efficient
+      </span>
     </motion.div>
   );
 }

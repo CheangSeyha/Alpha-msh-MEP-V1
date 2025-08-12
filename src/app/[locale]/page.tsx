@@ -1,6 +1,6 @@
 "use client";
 import Footer from "@/components/Alpha/Footer";
-import HeroSlider from "@/components/Alpha/HeroSlider";
+import HeroSlider from "../../components/Alpha/HeroSlider";
 import Navbar from "@/components/Alpha/Navbar";
 import Project from "@/components/Alpha/Project";
 import RealImpact from "@/components/Alpha/RealImpact";
@@ -11,7 +11,6 @@ import PartnershipSlider from "@/components/Alpha/PartnershipSwiper";
 import { motion } from "framer-motion";
 import AnimatedPresence from "@/components/Alpha/AnimatedPresence";
 import { useTranslations } from "next-intl";
-import { Scroll } from "lucide-react";
 import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 
@@ -37,6 +36,11 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="bg-[#121D2F] py-20">
+          <div className=" flex flex-col justify-center items-center">
+            <AnimatedPresence />
+          </div>
+        </section>
         {/* Our Services */}
         <section id="Services">
           <div className="max-w-6xl flex flex-col gap-5 mx-auto mt-10 p-4 md:p-2 md:px-4.5 lg:p-2.5">
@@ -69,11 +73,6 @@ export default function Home() {
         {/* Real Impact */}
         <section>
           <RealImpact />
-        </section>
-        <section>
-          <div className=" flex flex-col justify-center items-center">
-            <AnimatedPresence />
-          </div>
         </section>
 
         {/* Projects */}

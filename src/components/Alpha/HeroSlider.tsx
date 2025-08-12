@@ -37,14 +37,15 @@ export default function HeroSlider() {
               loop
               muted
               playsInline
-              className="w-full h-screen object-cover blur-[1px]"
+              className="w-full h-screen object-cover"
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* Overlay */}
-      <div className="absolute bg-opacity-40 z-100" />
+      <div className="absolute top-0 left-0 w-full h-full bg-black/30 backdrop-blur-[2px] z-10 pointer-events-none" />
+
       {/* Text Layer */}
       <div className="w-full xl:max-w-6xl absolute z-50 top-1/2 left-[50%] lg:left-[50.5%] transform -translate-x-1/2 -translate-y-1/2 text-white text-center p-4 md:p-2 md:px-4.5 lg:p-2.5">
         <motion.h1
@@ -68,7 +69,7 @@ export default function HeroSlider() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="text-start text-sm md:text-lg mx-auto font-exo font-medium leading-tight text-white mt-5 px-4 py-2 rounded-md bg-black/10 backdrop-blur-sm"
+          className="text-start text-sm md:text-lg mx-auto font-exo font-medium leading-tight text-white mt-5"
         >
           {t("description")}
         </motion.p>
