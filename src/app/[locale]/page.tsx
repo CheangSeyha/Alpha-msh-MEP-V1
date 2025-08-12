@@ -36,6 +36,11 @@ export default function Home() {
             <ProblemSolving />
           </div>
         </section>
+        <section>
+          <div className=" flex flex-col justify-center items-center">
+            <AnimatedPresence />
+          </div>
+        </section>
 
         {/* Our Services */}
         <section id="Services">
@@ -69,11 +74,6 @@ export default function Home() {
         {/* Real Impact */}
         <section>
           <RealImpact />
-        </section>
-        <section>
-          <div className=" flex flex-col justify-center items-center">
-            <AnimatedPresence />
-          </div>
         </section>
 
         {/* Projects */}
