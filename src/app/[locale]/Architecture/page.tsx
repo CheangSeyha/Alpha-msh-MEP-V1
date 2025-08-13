@@ -13,11 +13,11 @@ function page() {
 
   return (
      <div className="flex flex-col min-h-screen overflow-hidden">
-      <header className="z-50">
+      <header className="z-70">
         <NavBar />
       </header>
       <main className="flex flex-col">
-        <section className="w-full">
+        <section className="w-full z-50">
           <div className="relative w-full">
             <motion.img
               src="/arch_pic1.jpg"
@@ -80,7 +80,7 @@ function page() {
               </motion.p>
             </div>
               {/* for desktop */}
-              <div className="max-md:hidden absolute bottom-[3vw] z-30 right-0 p-[1.2rem] bg-blue-800 text-[1.2vw] text-white font-light rounded-tl-full font-poppins">
+              <div className="max-md:hidden absolute bottom-[3vw] z-60 right-0 p-[1.2rem] bg-blue-800 text-[1.2vw] text-white font-light rounded-tl-full font-poppins">
                 <div className="ml-2">"Alpha MSH CO., Ltd</div>
 
               </div>
@@ -97,23 +97,92 @@ function page() {
               </div>
           </div>
         </section>
-        <section className="w-full bg-[#CACAC8] py-20 px-10">
-          <div>
-            <h2 className=" text-6xl font-bold">Our Services</h2>
-            <p className="mt-4 text-lg">We offer a wide range of architectural and engineering services to meet your needs.</p>
+        <section className="w-full bg-[#CACAC8] max-md:px-0 relative z-40">
+          {/* Circle Style */}
+          <div className="absolute w-20 h-20 top-[13vw] left-[15vw] bg-amber-500 rounded-full opacity-25"></div>
+          <div className="absolute w-20 h-20 bottom-[35vw] right-10 bg-amber-500 rounded-full opacity-25"></div>
+
+          <div className="w-full px-[2vw] mt-25 max-md:w-full max-md:p-5 max-md:mb-10 text-center">
+              <h2 className="text-6xl font-bold">Our Services</h2>
+              <p className="mt-4 text-lg">We offer a wide range of architectural and engineering services to meet your needs.</p>
           </div>
-          <div className="mt-8">
-            <h3 className="text-4xl font-bold">Our Expertise</h3>
-            <ul className="mt-4 list-disc list-inside">
-              <li>Architectural Design</li>
-              <li>Structural Engineering</li>
-              <li>MEP Engineering</li>
-              <li>Construction Management</li>
-            </ul>
+          <div className="w-full flex max-md:flex-col mx-auto justify-between items-center p-10 max-md:p-5">
+            <div className="w-1/2 max-md:w-full max-md:p-5 max-md:mb-10 flex flex-col">
+              <h2 className="text-4xl font-bold">Vision Shapers</h2>
+              <p className="mt-4 text-lg md:pr-20 max-md:pr-0">carefully analyze and organize spaces to ensure they are not only functional and safe but also comfortable and visually appealing. 
+                They consider flow, accessibility, sustainability, and long-term usability to create environments that meet the needs of both people and purpose.</p>
+            </div>
+            <div className="w-1/2 flex justify-end items-end max-md:w-full">
+              <div className="w-full h-[25vw] max-md:h-[35vw] relative bg-[#A7BDD8] rounded-tl-full rounded-br-full">
+                  <img src="/Architecture/archi_planner.jpg" alt="Service" className="object-cover w-11/12 h-11/12 max-md:w-10/12 max-md:h-full absolute -left-[5rem] top-20 max-md:-top-10 max-md:left-[7.5vw] rounded-lg shadow-lg" />
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex flex-row-reverse max-md:flex-col md:mt-40 justify-between items-center p-10 max-md:p-5">
+            <div className="w-1/2 max-md:w-full max-md:p-5 max-md:mb-10 flex flex-col md:pl-30">
+              <h2 className="text-4xl font-bold">Design Liaisons</h2>
+              <p className="mt-4 text-lg">act as the essential link between clients, engineers, builders, and other stakeholders. They translate complex architectural ideas and technical details into clear,
+                 understandable language, ensuring that everyone involved in the project is aligned and informed at every stage.</p>
+            </div>
+            <div className="w-1/2 flex justify-end items-end max-md:w-full">
+              <div className="w-full h-[28vw] max-md:h-[35vw] relative bg-red-200 rounded-tr-full">
+                  <img src="/Civil/CivilDone3.jpg" alt="Service" className="object-cover w-11/12 h-10/12 max-md:w-10/12 max-md:h-full absolute -right-[5rem] top-9 max-md:-top-10 max-md:right-[7.5vw] rounded-lg shadow-lg" />
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex max-md:flex-col mx-auto justify-between items-center p-10 max-md:p-5">
+            <div className="w-1/2 max-md:w-full max-md:p-5 max-md:mb-10 flex flex-col justify-center items-start">
+              <h2 className="text-4xl font-bold">Creative Problem-Solvers </h2>
+              <p className="mt-4 text-lg md:pr-20 max-md:pr-0">tackle challenges that arise from site limitations, budget constraints, zoning regulations, and unforeseen design issues. They think creatively and strategically to
+                 find solutions that balance aesthetics, functionality, and feasibility, turning obstacles into opportunities for innovation.</p>
+            </div>
+            <div className="w-1/2 flex justify-end items-end max-md:w-full">
+              <div className="w-full h-[25vw] max-md:h-[35vw] relative bg-[#A7BDD8] rounded-tl-full">
+                  <img src="/Architecture/archi_planner.jpg" alt="Service" className="object-cover w-11/12 h-11/12 max-md:w-10/12 max-md:h-full absolute -left-[5rem] top-30 max-md:-top-10 max-md:left-[7.5vw] rounded-lg shadow-lg" />
+              </div>
+            </div>
+          </div>
+          <div className="w-full flex flex-row-reverse max-md:flex-col md:mt-40 justify-between items-center p-10 max-md:p-5">
+            <div className="w-1/2 max-md:w-full max-md:p-5 max-md:mb-10 flex flex-col justify-center items-start md:pl-30">
+              <h2 className="text-4xl font-bold">Project Stewards</h2>
+              <p className="mt-4 text-lg">manage the project’s journey from initial concept and sketches to the completed building. They oversee timelines, coordinate between teams, monitor quality, and ensure that each stage 
+                progresses smoothly, keeping the project on track and maintaining the vision and standards set from the beginning.</p>
+            </div>
+            <div className="w-1/2 flex justify-end items-end max-md:w-full">
+              <div className="w-full h-[28vw] max-md:h-[35vw] relative bg-red-200 rounded-tr-full rounded-bl-full">
+                  <img src="/Architecture/archi_planner.jpg" alt="Service" className="object-cover w-11/12 h-10/12 max-md:w-10/12 max-md:h-full absolute -right-[5rem] top-9 max-md:-top-10 max-md:right-[7.5vw] rounded-lg shadow-lg" />
+              </div>
+            </div>
           </div>
         </section>
+        <section className="w-full">
+           <div className="relative">
+      {/* Background image */}
+      <div className="fixed inset-0 w-screen h-screen bg-cover bg-center">
+        <img src="/Architecture/bg-inArchitecture.webp" alt="Our Approach" className="object-cover w-full h-full rounded-lg shadow-lg" />
+      </div>
+
+      {/* Overlay (optional) */}
+      <div className="fixed inset-0 bg-black/30"></div>
+
+      {/* Scrollable content */}
+      <div className="relative z-10">
+        <section className="h-screen flex items-center justify-center text-white">
+          {/* <h1 className="text-4xl font-bold">Welcome</h1> */}
+        </section>
+
+        <section className="flex items-center justify-center text-white p-10 bg-white">
+          <p className="text-2xl text-black">More content scrolling...</p>
+        </section>
+
+        <section className="h-screen flex items-center justify-center text-white">
+          <p className="text-2xl">Even more content</p>
+        </section>
+      </div>
+    </div>
+        </section>
       </main>
-      <footer>
+      <footer className="bg-white relative z-60">
         <Footer />
       </footer>
       <ScrollToTop />
