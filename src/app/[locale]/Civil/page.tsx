@@ -1,31 +1,31 @@
 "use client";
 import Footer from "@/components/Alpha/Footer";
 import Navbar from "@/components/Alpha/Navbar";
-import { useTranslations } from "next-intl";
 import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 import { motion } from "framer-motion";
 import Civil from "@/components/Alpha/Civil";
+import { useTranslations } from "next-intl";
 
 export default function page() {
-  const t = useTranslations("HomePage");
+  const t = useTranslations("CivilService");
   return (
     <div className="relative flex flex-col min-h-screen">
+      <div className="absolute top-0 left-0 right-0 w-screen h-screen">
+        <img src="/Civil/civil3.webp" alt="civil3" className="w-full h-full" />
+      </div>
       {/* Navbar */}
       <header>
         <Navbar />
       </header>
 
-      <main className="flex flex-col">
+      <main className="relative flex flex-col bg-gray-200">
         <section className="w-full mx-auto">
-          <div className="relative w-full mx-auto">
+          <div className="relative w-full mx-auto z-50">
             <motion.img
               src="/Civil/civil2.jpg"
               alt="cambodia"
-              className="object-cover w-full h-[70vh] lg:h-[100vh]"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="object-cover w-full h-[100vh]"
             />
 
             {/* Overlay with z-index 1 */}
@@ -39,11 +39,10 @@ export default function page() {
               transition={{ delay: 1, duration: 1 }}
             >
               <h1 className="font-exo text-lg sm:text-xl md:text-3xl xl:text-4xl font-bold text-white uppercase">
-                Build
+                {t("build")}
               </h1>
               <p className="font-exo text-xs sm:text-sm xl:text-base text-white mt-1 max-w-[250px] sm:max-w-[400px]">
-                Representing the creation of structures, infrastructure, and
-                communities from concept to completion
+                {t("bdescription")}
               </p>
             </motion.div>
 
@@ -55,11 +54,10 @@ export default function page() {
               transition={{ delay: 1, duration: 1 }}
             >
               <h1 className="font-exo text-lg sm:text-xl md:text-3xl xl:text-4xl font-bold text-white uppercase">
-                Strength
+                {t("strength")}
               </h1>
               <p className="font-exo text-xs sm:text-sm xl:text-base text-white mt-1 max-w-[250px] sm:max-w-[400px]">
-                Symbolizing durability, structural integrity, and engineering
-                excellence to withstand time and challenges.
+                {t("sdescription")}
               </p>
             </motion.div>
 
@@ -71,34 +69,51 @@ export default function page() {
               transition={{ delay: 1, duration: 1 }}
             >
               <h1 className="font-exo text-lg sm:text-xl md:text-3xl xl:text-4xl font-bold text-white uppercase">
-                Trust
+                {t("trust")}
               </h1>
               <p className="font-exo text-xs sm:text-sm xl:text-base text-white mt-1 max-w-[250px] sm:max-w-[500px]">
-                Reflecting reliability, professionalism, and commitment to
-                delivering safe, high-quality projects.
+                {t("tdescription")}
               </p>
             </motion.div>
-
-            {/* Bottom Text */}
-            <motion.h1
-              className="absolute hidden lg:block w-full bottom-0 left-1/2 transform -translate-x-1/2 text-center font-exo text-xs lg:text-lg font-medium text-white p-4 z-20"
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 1 }}
-            >
-              At <span className="font-bold text-blue-500">Alpha-MSH</span>, We
-              build with vision, strengthen with engineering excellence, and
-              earn trust through reliable, high-quality results.
-            </motion.h1>
           </div>
         </section>
-        <section className="w-full mx-auto px-4 md:px-6 lg:px-8 xl:px-20">
+        <section className="w-full mx-auto px-4 md:px-6 lg:px-8 xl:px-20 z-50 bg-gray-200">
           <Civil />
+        </section>
+        <section>
+          <div className="relative">
+            {/* Background image */}
+            <div className="fixed inset-0 w-screen h-screen bg-cover bg-center">
+              <img
+                src="/Civil/civil3.webp"
+                alt="Our Approach"
+                className="object-cover w-full h-full rounded-lg shadow-lg"
+              />
+            </div>
+
+            {/* Overlay (optional) */}
+            <div className="fixed inset-0 bg-black/30"></div>
+
+            {/* Scrollable content */}
+            <div className="relative z-10">
+              <section className="h-screen flex items-center justify-center text-white">
+                {/* <h1 className="text-4xl font-bold">Welcome</h1> */}
+              </section>
+
+              <section className="flex items-center justify-center text-white p-10 bg-white">
+                <p className="text-2xl text-black">More content scrolling...</p>
+              </section>
+
+              <section className="h-screen flex items-center justify-center text-white">
+                <p className="text-2xl">Even more content</p>
+              </section>
+            </div>
+          </div>
         </section>
       </main>
 
       {/* Footer */}
-      <footer>
+      <footer className="bg-white relative z-60">
         <Footer />
       </footer>
 

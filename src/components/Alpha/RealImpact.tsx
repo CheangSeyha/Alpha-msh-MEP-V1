@@ -22,7 +22,7 @@ function RealImpact() {
   ];
 
   return (
-    <div className="bg-[#121D2F] py-20 flex flex-col items-center justify-center my-10">
+    <div className="bg-[#121D2F] py-20 flex flex-col items-center justify-center mt-10 mb-5">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

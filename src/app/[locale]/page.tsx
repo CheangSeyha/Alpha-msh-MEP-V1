@@ -35,11 +35,6 @@ export default function Home() {
             <ProblemSolving />
           </div>
         </section>
-        <section>
-          <div className=" flex flex-col justify-center items-center">
-            <AnimatedPresence />
-          </div>
-        </section>
 
         <section className="bg-[#121D2F] py-20">
           <div className=" flex flex-col justify-center items-center">
@@ -48,7 +43,7 @@ export default function Home() {
         </section>
         {/* Our Services */}
         <section id="Services">
-          <div className="max-w-6xl flex flex-col gap-5 mx-auto mt-10 p-4 md:p-2 md:px-4.5 lg:p-2.5">
+          <div className="max-w-6xl flex flex-col gap-5 mx-auto mt-20 p-4 md:p-2 md:px-4.5 lg:p-2.5">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}

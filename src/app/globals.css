@@ -125,5 +125,18 @@ body {
   }
   body {
     @apply bg-background text-foreground;
+
+    .swiper-pagination {
+      z-index: 60 !important; /* Higher than overlay */
+      position: relative !important; /* Breaks free from parent's z-index stacking */
+    }
+
+    .swiper-pagination-bullet {
+      z-index: 60 !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      z-index: 60 !important;
+    }
   }
 }

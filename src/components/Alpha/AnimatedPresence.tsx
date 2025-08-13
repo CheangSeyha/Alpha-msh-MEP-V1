@@ -1,4 +1,5 @@
 import { motion, useInView } from "framer-motion";
+import { useTranslations } from "next-intl";
 import React, { useRef } from "react";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 
@@ -8,6 +9,8 @@ function AnimatedPresence() {
     amount: 0.5, // Trigger when 50% of the element is visible
     once: false, // Let it trigger multiple times
   });
+
+  const t = useTranslations("quoteCompany");
 
   return (
     <motion.div
@@ -30,7 +33,7 @@ function AnimatedPresence() {
           fontSize: "clamp(2rem, 4vw, 5rem)",
         }}
       >
-        Trustable, Reliable, Efficient
+        {t("quote")}
       </span>
     </motion.div>
   );
