@@ -3,7 +3,6 @@ import Footer from "@/components/Alpha/Footer";
 import NavBar from "@/components/Alpha/Navbar";
 import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 import ScrollToTop from "@/components/Alpha/ScrollToTop";
-import { Scroll } from "lucide-react";
 import { useTranslations } from "next-intl";
 import React from "react";
 

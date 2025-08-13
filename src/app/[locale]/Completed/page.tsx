@@ -4,7 +4,6 @@ import CompletedCard from "@/components/Alpha/CompletedCard";
 import Footer from "@/components/Alpha/Footer";
 import NavBar from "@/components/Alpha/Navbar";
 import { motion } from "framer-motion";
-import { Scroll } from "lucide-react";
 import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 import { useTranslations } from "next-intl";

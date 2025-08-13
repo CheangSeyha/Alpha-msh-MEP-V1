@@ -6,7 +6,6 @@ import Navbar from "@/components/Alpha/Navbar";
 import { useTranslations } from "next-intl";
 import React from "react";
 import { OfficeCarousel } from "@/components/Alpha/OfficeCarousel";
-import { Scroll } from "lucide-react";
 import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 

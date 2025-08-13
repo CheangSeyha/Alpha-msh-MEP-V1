@@ -74,6 +74,10 @@
     "speechfromceo": "Speech from CEO"
   },
 
+  "quoteCompany": {
+    "quote": "Trustable, Consistent, Efficient"
+  },
+
   "Team": {
     "team": "Team Members"
   },
@@ -219,6 +223,27 @@
 
     "title10": "Water Treatment System",
     "description10": "Installation of water filters (sediment, carbon), water softeners, UV purifiers, reverse osmosis (RO) systems, and associated piping and bypass valves. This involves integrating these units into the main water supply line, often at the point of entry or specific points of use, to improve water quality."
+  },
+
+  "CivilService": {
+    "cservices": "Civil Services",
+    "ctext": " We build with vision, strengthen with engineering excellence, and earn trust through reliable, high-quality results.",
+    "build": "build",
+    "bdescription": " Representing the creation of structures, infrastructure, and communities from concept to completion",
+    "strength": "strength",
+    "sdescription": " Symbolizing durability, structural integrity, and engineering excellence to withstand time and challenges",
+    "trust": "trust",
+    "tdescription": "Reflecting reliability, professionalism, and commitment to delivering safe, high-quality projects.",
+    "title1": "Project Execution & Supervision",
+    "description1": "The Civil Engineer monitors daily site activities to ensure they adhere to approved plans, specifications, and established timelines. They provide essential technical guidance to the site teams and subcontractors, guaranteeing that all work is executed in strict accordance with relevant codes, standards, and regulations",
+    "title2": "Coordination & Communication",
+    "description2": "Serving as the main technical point of contact, the engineer facilitates communication between the project team, contractors, and consultants. They coordinate with architects, structural engineers, and MEP teams to efficiently resolve any issues that arise on site. Regular attendance at site meetings is also a key duty, where they report on project progress to management.",
+    "title3": "Quality Assurance",
+    "description3": "A critical part of the role is quality control. The Civil Engineer inspects all materials delivered to the site to ensure they comply with project specifications. They also perform regular quality checks on the work being done and implement corrective actions for any defects or deviations found.",
+    "title4": "Safety & Compliance",
+    "description4": "The engineer is responsible for enforcing site safety rules and ensuring compliance with all health and safety regulations. In the event of an incident, they must report it and implement preventative measures to ensure a safe working environment for everyone on site.",
+    "title5": "Documentation & Reporting",
+    "description5": "The Civil Engineer maintains comprehensive site records, including daily progress reports, inspection logs, and as-built drawings. They are also responsible for preparing detailed reports for management on the project's status, including any delays or issues that have occurred."
   },
 
   "Footer": {

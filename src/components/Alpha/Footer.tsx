@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 function Footer() {
   const t = useTranslations("Footer");
   return (
-    <div className="relative w-full mt-20">
+    <div className="relative w-full">
       <img
         src="/worldMap.jpg"
         alt="Background"
