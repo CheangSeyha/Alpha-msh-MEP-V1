@@ -51,7 +51,7 @@ function Civil() {
   const t = useTranslations("CivilService");
 
   return (
-    <div className="w-full mx-auto mt-10">
+    <div className="w-full mx-auto mt-10 pb-15">
       <div className="flex flex-col mb-20 md:mb-30">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
