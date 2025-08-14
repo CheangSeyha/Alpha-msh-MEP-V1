@@ -27,7 +27,7 @@ function page() {
             </h1>
           </div>
         </section>
-        <section className="flex justify-center items-center text-lg ">
+        <section className="flex justify-center items-center text-lg py-15">
           {t("text")}
         </section>
       </main>

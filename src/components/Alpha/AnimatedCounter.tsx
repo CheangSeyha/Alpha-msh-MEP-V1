@@ -11,7 +11,7 @@ interface AnimatedCounterProps {
 
 export default function AnimatedCounter({
   targetNumber,
-  duration = 2,
+  duration = 3 ,
   className = "",
 }: AnimatedCounterProps) {
   const count = useMotionValue(0);
