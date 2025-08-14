@@ -7,40 +7,63 @@ import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import React from "react";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 function page() {
   const t = useTranslations("Electrical");
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="z-50">
+      <header className="z-200">
         <Navbar />
       </header>
-      <main className="flex flex-col mt-30 lg:mt-50">
+      <main className="flex flex-col">
         <section className="w-full mx-auto">
-          <div className="relative w-full mx-auto">
+          <div className="relative w-full mx-auto z-100">
             <motion.img
-              src="/cambodia.jpg"
+              src="/Electrical/elec.jpg"
               alt="cambodia"
-              className="object-cover w-full h-[50%]"
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1.5, ease: "easeOut" }}
+              className="object-cover w-full h-[100vh]"
             />
-            <motion.h1
-              className="absolute top-0 left-1/2 transform -translate-x-1/2 text-center font-exo text-sm md:text-2xl lg:text-4xl font-bold text-black uppercase p-2 md:p-5"
+            {/* Overlay with z-index 1 */}
+            <div className="absolute top-0 left-0 w-full h-full bg-black/30 backdrop-blur-[2px]"></div>
+            <motion.div
+              className=" w-full lg:max-w-6xl mx-auto absolute z-30 top-[30%] md:top-2/5 left-1/2 transform -translate-x-1/2 p-5"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 1 }}
             >
-              {t("electrical")}
-            </motion.h1>
+              <h1 className="font-exo text-3xl md:text-4xl xl:text-5xl font-bold text-white uppercase">
+                Electrical Services
+              </h1>
+              <p className="font-exo text-sm xl:text-base text-white mt-4 w-fit leading-normal">
+                Electrical MEP work designs and installs all power and
+                communication systems in a building. This includes managing both
+                high-voltage power through transformers and distribution boards,
+                as well as low-voltage systems for lighting, security (CCTV,
+                access control), communication (data, telephone), and safety
+                (fire alarm). These systems are essential for a building's
+                functionality, safety, and security.
+              </p>
+            </motion.div>
+            <div
+              className="absolute z-20 bottom-10 left-1/2 transform -translate-x-1/2"
+              onClick={() => {
+                document
+                  .getElementById("electricalServices")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              <FaAngleDoubleDown className="text-white animate-bounce w-8 h-8 md:w-10 md:h-10" />
+            </div>
           </div>
         </section>
-        <section className="w-full max-w-6xl mx-auto px-4 md:px-6 lg:px-8 xl:px-0">
+        {/* electrical */}
+        <section className="overflow-hidden" id="electricalServices">
           <Electrical />
         </section>
       </main>
-      <footer>
+
+      <footer className="relative bg-white z-50">
         <Footer />
       </footer>
 

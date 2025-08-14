@@ -11,9 +11,6 @@ export default function page() {
   const t = useTranslations("CivilService");
   return (
     <div className="relative flex flex-col min-h-screen">
-      <div className="absolute top-0 left-0 right-0 w-screen h-screen">
-        <img src="/Civil/civil3.webp" alt="civil3" className="w-full h-full" />
-      </div>
       {/* Navbar */}
       <header>
         <Navbar />
@@ -80,6 +77,7 @@ export default function page() {
         <section className="w-full mx-auto px-4 md:px-6 lg:px-8 xl:px-20 z-50 bg-gray-200">
           <Civil />
         </section>
+
         <section>
           <div className="relative">
             {/* Background image */}
