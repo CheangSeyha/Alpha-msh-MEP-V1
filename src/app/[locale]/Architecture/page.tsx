@@ -5,11 +5,21 @@ import ScrollToTop from "@/components/Alpha/ScrollToTop";
 import NavBar from "@/components/Alpha/Navbar";
 import { motion } from "framer-motion";
 import React from "react";
+import ImageSlider from "@/components/Alpha/ArchitectureSlider";
+
+const projectImages = [
+  "/Architecture/archi_planner.jpg",
+  "/Civil/civil1.jpg",
+  "/Civil/civil2.jpg",
+  "/Civil/civil3.webp",
+
+];
 
 function page() {
   function t(arg0: string): React.ReactNode | import("motion-dom").MotionValue<number> | import("motion-dom").MotionValue<string> {
     throw new Error("Function not implemented.");
   }
+
 
   return (
      <div className="flex flex-col min-h-screen overflow-hidden">
@@ -97,10 +107,14 @@ function page() {
               </div>
           </div>
         </section>
-        <section className="w-full bg-[#CACAC8] max-md:px-0 relative z-40">
+        <section className="w-full bg-[#CACAC8] max-md:px-0 relative z-40 pb-20">
           {/* Circle Style */}
+          <div className="absolute w-20 h-20 top-[13vw] left-[30vw] bg-amber-500 rounded-full opacity-25"></div>
           <div className="absolute w-20 h-20 top-[13vw] left-[15vw] bg-amber-500 rounded-full opacity-25"></div>
+          <div className="absolute w-20 h-20 top-[70vw] left-[40vw] bg-amber-500 rounded-full opacity-25"></div>
+          <div className="absolute w-20 h-20 top-[70vw] left-[50vw] bg-amber-500 rounded-full opacity-25"></div>
           <div className="absolute w-20 h-20 bottom-[35vw] right-10 bg-amber-500 rounded-full opacity-25"></div>
+          <div className="absolute w-20 h-20 bottom-[35vw] right-40 bg-amber-500 rounded-full opacity-25"></div>
 
           <div className="w-full px-[2vw] mt-25 max-md:w-full max-md:p-5 max-md:mb-10 text-center">
               <h2 className="text-6xl font-bold">Our Services</h2>
@@ -125,7 +139,7 @@ function page() {
                  understandable language, ensuring that everyone involved in the project is aligned and informed at every stage.</p>
             </div>
             <div className="w-1/2 flex justify-end items-end max-md:w-full">
-              <div className="w-full h-[28vw] max-md:h-[35vw] relative bg-red-200 rounded-tr-full">
+              <div className="w-full h-[28vw] max-md:h-[35vw] relative bg-[#595959] rounded-tr-full">
                   <img src="/Civil/CivilDone3.jpg" alt="Service" className="object-cover w-11/12 h-10/12 max-md:w-10/12 max-md:h-full absolute -right-[5rem] top-9 max-md:-top-10 max-md:right-[7.5vw] rounded-lg shadow-lg" />
               </div>
             </div>
@@ -149,45 +163,63 @@ function page() {
                 progresses smoothly, keeping the project on track and maintaining the vision and standards set from the beginning.</p>
             </div>
             <div className="w-1/2 flex justify-end items-end max-md:w-full">
-              <div className="w-full h-[28vw] max-md:h-[35vw] relative bg-red-200 rounded-tr-full rounded-bl-full">
+              <div className="w-full h-[28vw] max-md:h-[35vw] relative bg-[#595959] rounded-tr-full rounded-bl-full">
                   <img src="/Architecture/archi_planner.jpg" alt="Service" className="object-cover w-11/12 h-10/12 max-md:w-10/12 max-md:h-full absolute -right-[5rem] top-9 max-md:-top-10 max-md:right-[7.5vw] rounded-lg shadow-lg" />
               </div>
             </div>
           </div>
         </section>
         <section className="w-full">
-           <div className="relative">
-      {/* Background image */}
-      <div className="fixed inset-0 w-screen h-screen bg-cover bg-center">
-        <img src="/Architecture/bg-inArchitecture.webp" alt="Our Approach" className="object-cover w-full h-full rounded-lg shadow-lg" />
-      </div>
+          <div className="relative">
+            {/* Background image */}
+            <div className="fixed inset-0 w-screen h-screen bg-cover bg-center">
+              <img src="/Architecture/bg-inArchitecture.webp" alt="Our Approach" className="object-cover w-full h-full rounded-lg shadow-lg" />
+            </div>
 
-      {/* Overlay (optional) */}
-      <div className="fixed inset-0 bg-black/30"></div>
+            {/* Overlay (optional) */}
+            <div className="fixed inset-0 bg-black/30"></div>
 
-      {/* Scrollable content */}
-      <div className="relative z-10">
-        <section className="h-screen flex items-center justify-center text-white">
-          {/* <h1 className="text-4xl font-bold">Welcome</h1> */}
+            {/* Scrollable content */}
+            <div className="relative z-10">
+              <section className="h-[500px] flex items-center justify-center text-white">
+                <h1 className="text-6xl font-poppins font-bold">Explore Our Project</h1>
+              </section>
+
+              <section className="bg-white">
+                {/* <p className="text-2xl text-black">More content scrolling...</p> */}
+                <div className="w-full">
+                  <p className="text-xl font-poppins font-light p-4 text-black">Project Overview</p>
+                </div>
+                <div className="border-b-2 border-[#121D2F] w-full p-10">
+                  <div className="w-full md:px-20 md:pr-[7rem]">
+                    <h1 className="text-4xl font-poppins font-bold py-4">Our Recent Work</h1>
+                    <p className="text-xl font-poppins font-light text-black">
+                      Our architectural projects are designed with a focus on sustainability, functionality, and aesthetics. We aim to create spaces that not only meet the needs of our clients but also enhance the environment and community.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
         </section>
+        <section className="w-full max-md:px-0 relative z-10 pb-20 bg-white ">
+          <div className="absolute w-100 h-100 -top-56 -left-[10vw] bg-amber-500 rounded-full opacity-25"></div>
+          <div className="absolute w-100 h-100 top-[33vw] z-10 left-[35vw] bg-amber-500 rounded-full opacity-25 max-lg:hidden"></div>
+          <div className="absolute w-20 h-20 bottom-[10vw] z-10 right-10 bg-amber-500 rounded-full opacity-25"></div>
+          <div className="absolute w-20 h-20 bottom-[20vw] z-10 right-40 bg-amber-500 rounded-full opacity-25"></div>
 
-        <section className="flex items-center justify-center text-white p-10 bg-white">
-          <p className="text-2xl text-black">More content scrolling...</p>
-        </section>
-
-        <section className="h-screen flex items-center justify-center text-white">
-          <p className="text-2xl">Even more content</p>
-        </section>
-      </div>
-    </div>
+            <ImageSlider images={projectImages} visibleCount={2} year={2025} project="Project 1" />
+            <ImageSlider images={projectImages} visibleCount={2} year={2025} project="Project 2" />
+            <ImageSlider images={projectImages} visibleCount={2} year={2025} project="Project 3" />
         </section>
       </main>
-      <footer className="bg-white relative z-60">
+      <footer className="bg-white relative z-50">
         <Footer />
       </footer>
       <ScrollToTop />
       <ScrollProgressBar />
     </div>
+    
   );
 }
 

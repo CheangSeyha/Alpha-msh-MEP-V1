@@ -78,7 +78,7 @@ function Project() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
-              className="relative md:w-[500px] bg-cover bg-center font-exo overflow-hidden group"
+              className="relative md:w-[500px] bg-cover bg-center font-exo overflow-hidden group rounded-xl hover:rounded-none transition-transform duration-500 ease-in-out"
             >
               <img
                 src={item.img}
