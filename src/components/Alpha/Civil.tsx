@@ -1,10 +1,6 @@
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import React from "react";
-import { FaSitemap } from "react-icons/fa";
-import { IoMdDocument } from "react-icons/io";
-import { MdEngineering, MdOutlineVerified } from "react-icons/md";
-import { SiBlueprint } from "react-icons/si";
 
 const serviceVariants = {
   hidden: { opacity: 0, y: 30 },
