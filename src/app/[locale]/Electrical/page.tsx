@@ -33,16 +33,10 @@ function page() {
               transition={{ delay: 1, duration: 1 }}
             >
               <h1 className="font-exo text-3xl md:text-4xl xl:text-5xl font-bold text-white uppercase">
-                Electrical Services
+                {t("title")}
               </h1>
               <p className="font-exo text-sm xl:text-base text-white mt-4 w-fit leading-normal">
-                Electrical MEP work designs and installs all power and
-                communication systems in a building. This includes managing both
-                high-voltage power through transformers and distribution boards,
-                as well as low-voltage systems for lighting, security (CCTV,
-                access control), communication (data, telephone), and safety
-                (fire alarm). These systems are essential for a building's
-                functionality, safety, and security.
+                {t("Edescription")}
               </p>
             </motion.div>
             <div

@@ -35,16 +35,10 @@ function page() {
               transition={{ delay: 1, duration: 1 }}
             >
               <h1 className="font-exo text-3xl md:text-4xl xl:text-5xl font-bold text-white uppercase">
-                Mechanical Services
+                {t("title")}
               </h1>
               <p className="font-exo text-sm xl:text-base text-white mt-4 w-fit leading-normal">
-                Mechanical MEP work involves designing and installing all of a
-                building's HVAC systems. This includes air-conditioning using
-                large chiller systems and smaller split units, as well as the
-                associated chilled water piping and ducting. It also covers all
-                ventilation needs, from air exhausting to fresh air supply and
-                specialized systems like kitchen hoods, ensuring occupant
-                comfort and a healthy indoor environment.
+                {t("Mdescription")}
               </p>
             </motion.div>
 

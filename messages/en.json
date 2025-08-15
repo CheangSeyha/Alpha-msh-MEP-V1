@@ -132,7 +132,8 @@
   },
 
   "Mechanical": {
-    "Mechanical": "Mechanical Services",
+    "title": "Mechanical Services",
+    "Mdescription": " Mechanical MEP work involves designing and installing all of a building's HVAC systems. This includes air-conditioning using large chiller systems and smaller split units, as well as the associated chilled water piping and ducting. It also covers all ventilation needs, from air exhausting to fresh air supply and specialized systems like kitchen hoods, ensuring occupant comfort and a healthy indoor environment.",
     "air-conditioning system": "design & installation of air-conditioning system",
     "description": "An air-conditioning system is composed of several key elements working in concert to provide cooling. At its core, a chiller system generates chilled water, which is then circulated to Air Handling Units (AHUs), used for conditioning air in large spaces, and Fan Coil Units (FCUs), which serve individual rooms. For more localized cooling, split unit systems are utilized, encompassing VRV/VRF systems for multiple zones, digital scroll systems for variable capacity, and single split units for one-to-one cooling. The efficient distribution of chilled water relies on chilled water piping, while ducting is crucial for delivering conditioned air and returning warm air. The overall design and installation of these components, from capacity planning and zoning to equipment mounting and electrical work, form the complete air-conditioning framework.",
     "ventilation system": "design & installation of ventilation system",
@@ -145,6 +146,8 @@
   },
 
   "Electrical": {
+    "title": "Electrical Services",
+    "Edescription": " Electrical MEP work designs and installs all power and communication systems in a building. This includes managing both high-voltage power through transformers and distribution boards, as well as low-voltage systems for lighting, security (CCTV, access control), communication (data, telephone), and safety(fire alarm). These systems are essential for a building's functionality, safety, and security.",
     "electrical": "electrical services",
     "lowvoltage": "low voltage",
     "title1": "Transformer",
@@ -193,7 +196,8 @@
   },
 
   "Plumbing": {
-    "plumbing": "plumbing services",
+    "title": "plumbing services",
+    "Pdescription": " Plumbing service is a work that designs and installs all water-related systems in a building, including hot and cold water supply, drainage, and specialized systems for fire suppression and water treatment. It is essential for a building's safety, hygiene, and functionality.",
     "title1": "Water Supply System",
     "description1": "Installation of main water lines from the source to the building. This includes laying pipes (PVC, PEX, copper), installing pressure regulators, water meters, shut-off valves, and distributing water lines to all fixtures and outlets throughout the building, ensuring adequate pressure and flow.",
 

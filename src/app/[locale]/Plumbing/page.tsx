@@ -35,14 +35,10 @@ function page() {
                 transition={{ delay: 1, duration: 1 }}
               >
                 <h1 className="font-exo text-3xl md:text-4xl xl:text-5xl font-bold text-white uppercase">
-                  Plumbing Services
+                  {t("title")}
                 </h1>
                 <p className="font-exo text-sm xl:text-base text-white mt-4 w-fit leading-normal">
-                  Plumbing service is a work that designs and installs all
-                  water-related systems in a building, including hot and cold
-                  water supply, drainage, and specialized systems for fire
-                  suppression and water treatment. It is essential for a
-                  building's safety, hygiene, and functionality.
+                  {t("Pdescription")}
                 </p>
               </motion.div>
 
