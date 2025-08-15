@@ -93,18 +93,35 @@ export default function page() {
             <div className="fixed inset-0 bg-black/30"></div>
 
             {/* Scrollable content */}
-            <div className="relative z-10">
-              <section className="h-screen flex items-center justify-center text-white">
-                {/* <h1 className="text-4xl font-bold">Welcome</h1> */}
-              </section>
+            <div className="relative flex justify-center items-center h-100 z-10">
+              <p className="text-6xl font-poppins font-bold text-white text-center">
+                Explore Our Projects
+              </p>
+            </div>
+          </div>
+        </section>
 
-              <section className="flex items-center justify-center text-white p-10 bg-white">
-                <p className="text-2xl text-black">More content scrolling...</p>
-              </section>
-
-              <section className="h-screen flex items-center justify-center text-white">
-                <p className="text-2xl">Even more content</p>
-              </section>
+        <section className="relative bg-white z-40">
+          {/* <p className="text-2xl text-black">More content scrolling...</p> */}
+          <div className="w-full">
+            <p className="text-xl font-exo font-light p-4 text-black">
+              Project Overview
+            </p>
+          </div>
+          <div className="border-b-2 border-[#121D2F] w-full p-10">
+            <div className="w-full md:px-20 md:pr-[7rem]">
+              <h1 className="text-4xl font-exo font-bold py-4">
+                Our Recent Work
+              </h1>
+              <p className="text-xl font-exo font-light text-black">
+                Our civil engineering projects are centered on sustainability,
+                functionality, and aesthetics. We design and build resilient
+                infrastructure that not only serves the community's needs but
+                also minimizes environmental impact and enhances the surrounding
+                landscape. Our goal is to create structures that are both
+                enduring and beautiful, leaving a positive legacy for future
+                generations.
+              </p>
             </div>
           </div>
         </section>
