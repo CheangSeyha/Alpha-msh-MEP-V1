@@ -247,7 +247,59 @@
     "title4": "Safety & Compliance",
     "description4": "The engineer is responsible for enforcing site safety rules and ensuring compliance with all health and safety regulations. In the event of an incident, they must report it and implement preventative measures to ensure a safe working environment for everyone on site.",
     "title5": "Documentation & Reporting",
-    "description5": "The Civil Engineer maintains comprehensive site records, including daily progress reports, inspection logs, and as-built drawings. They are also responsible for preparing detailed reports for management on the project's status, including any delays or issues that have occurred."
+    "description5": "The Civil Engineer maintains comprehensive site records, including daily progress reports, inspection logs, and as-built drawings. They are also responsible for preparing detailed reports for management on the project's status, including any delays or issues that have occurred.",
+    "explore": "Explore Our Project",
+    "project": "Project Overviews",
+    "recentwork": "Our Recent Work",
+    "rdescription": "Our civil engineering projects are centered on sustainability, functionality, and aesthetics. We design and build resilient infrastructure that not only serves the community's needs but also minimizes environmental impact and enhances the surrounding landscape. Our goal is to create structures that are both enduring and beautiful, leaving a positive legacy for future generations.",
+    "project1": "Project1",
+    "year1": "2025",
+    "project2": "Project2",
+    "year2": "2025",
+    "project3": "Project3",
+    "year3": "2025"
+  },
+  "Architecture": {
+    "aservices": "Architecture Services",
+    "atext": "We offer a wide range of architectural and engineering services to meet your needs.",
+    "form": "form",
+    "formdescription": "design that captivates",
+    "flow": "flow",
+    "flowdescription": " systems that harmonize",
+    "function": "function",
+    "fundescription": "spaces that perform flawlessly",
+    "at": "at",
+    "alpha": "ALPHA MS",
+    "h": "H",
+    "Adescription": " we blend architectural beauty with seamless engineering to create environments where every detail works together for your success.",
+
+    "al": "Alpha MSH CO., Ltd",
+    "trustable": "Trustable",
+    "consistent": "Consistent",
+    "efficient": "Efficient",
+
+    "title1": "Vision Shapers",
+    "description1": "carefully analyze and organize spaces to ensure they are not only  functional and safe but also comfortable and visually appealing.They consider flow, accessibility, sustainability, and long-term usability to create environments that meet the needs of both people and purpose.",
+
+    "title2": "Design Communicator",
+    "description2": "  act as the essential link between clients, engineers, builders, and other stakeholders. They translate complex architectural ideas and technical details into clear, understandable language, ensuring that everyone involved in the project is aligned and informed at every stage.",
+
+    "title3": "Creative Problem-Solvers",
+    "description3": "tackle challenges that arise from site limitations, budget constraints, zoning regulations, and unforeseen design issues. They think creatively and strategically to find solutions that balance aesthetics, functionality, and feasibility, turning obstacles into opportunities for innovation.",
+
+    "title4": "Project Stewards",
+    "description4": " manage the project’s journey from initial concept and sketches to the completed building. They oversee timelines, coordinate between teams, monitor quality, and ensure that each stage progresses smoothly, keeping the project on track and maintaining the vision and standards set from the beginning.",
+
+    "explore": "Explore Our Project",
+    "project": "Project Overviews",
+    "recentwork": "Our Recent Work",
+    "adescription": " Our architectural projects are designed with a focus on sustainability, functionality, and aesthetics. We aim to  create spaces that not only meet the needs of our clients but also enhance the environment and community.",
+    "project1": "Project1",
+    "year1": "2025",
+    "project2": "Project2",
+    "year2": "2025",
+    "project3": "Project3",
+    "year3": "2025"
   },
 
   "Footer": {
