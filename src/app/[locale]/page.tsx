@@ -61,7 +61,7 @@ export default function Home() {
                   whileInView={{ scaleX: 1 }}
                   transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
                   viewport={{ once: true }}
-                  className="absolute bottom-0 left-1/2 -translate-x-1/2 origin-center w-full h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"
+                  className="absolute bottom-0 left-1/2 -translate-x-1/2 origin-center w-full h-[3px] bg-[#1b42ce] rounded"
                 />
               </div>
             </motion.div>
@@ -100,7 +100,7 @@ export default function Home() {
                   whileInView={{ scaleX: 1 }}
                   transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
                   viewport={{ once: true }}
-                  className="absolute bottom-0 left-0 origin-left w-full h-[3px] bg-gradient-to-r from-blue-500 via-red-500 to-purple-500 rounded"
+                  className="absolute bottom-0 left-0 origin-left w-full h-[3px] bg-[#1b42ce] rounded"
                 />
               </div>
             </motion.div>
