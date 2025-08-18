@@ -6,6 +6,14 @@ import ScrollProgressBar from "@/components/Alpha/ScollProgressBar";
 import { motion } from "framer-motion";
 import Civil from "@/components/Alpha/Civil";
 import { useTranslations } from "next-intl";
+import ImageSlider from "@/components/Alpha/CivilSlider";
+
+const projectImage = [
+  "/Architecture/archi_planner.jpg",
+  "/Civil/civil1.jpg",
+  "/Civil/civil2.jpg",
+  "/Civil/civil3.webp",
+];
 
 export default function page() {
   const t = useTranslations("CivilService");
@@ -83,7 +91,7 @@ export default function page() {
             {/* Background image */}
             <div className="fixed inset-0 w-screen h-screen bg-cover bg-center">
               <img
-                src="/Civil/civil3.webp"
+                src="/Civil/CPM_news_ChipMongRetail2_07-09-2021.jpg"
                 alt="Our Approach"
                 className="object-cover w-full h-full rounded-lg shadow-lg"
               />
@@ -95,7 +103,7 @@ export default function page() {
             {/* Scrollable content */}
             <div className="relative flex justify-center items-center h-100 z-10">
               <p className="text-6xl font-poppins font-bold text-white text-center">
-                Explore Our Projects
+                {t("explore")}
               </p>
             </div>
           </div>
@@ -105,25 +113,45 @@ export default function page() {
           {/* <p className="text-2xl text-black">More content scrolling...</p> */}
           <div className="w-full">
             <p className="text-xl font-exo font-light p-4 text-black">
-              Project Overview
+              {t("project")}
             </p>
           </div>
           <div className="border-b-2 border-[#121D2F] w-full p-10">
             <div className="w-full md:px-20 md:pr-[7rem]">
               <h1 className="text-4xl font-exo font-bold py-4">
-                Our Recent Work
+                {t("recentwork")}
               </h1>
               <p className="text-xl font-exo font-light text-black">
-                Our civil engineering projects are centered on sustainability,
-                functionality, and aesthetics. We design and build resilient
-                infrastructure that not only serves the community's needs but
-                also minimizes environmental impact and enhances the surrounding
-                landscape. Our goal is to create structures that are both
-                enduring and beautiful, leaving a positive legacy for future
-                generations.
+                {t("rdescription")}
               </p>
             </div>
           </div>
+        </section>
+
+        <section className="w-full max-md:px-0 relative z-10 pb-20 bg-white ">
+          <div className="absolute w-20 h-20 lg:w-50 lg:h-50 top-1 left-10 bg-[#1B42CE]  opacity-25"></div>
+          <div className="absolute w-50 h-50 bottom-20 z-10 left-1 bg-[#1B42CE]  opacity-25 max-lg:hidden"></div>
+          <div className="absolute w-20 h-20 bottom-[10vw] z-10 right-10 bg-[#1B42CE]  opacity-25"></div>
+          <div className="absolute w-20 h-20 bottom-[90vw] z-10 left-10 bg-[#1B42CE] opacity-25"></div>
+
+          <ImageSlider
+            images={projectImage}
+            visibleCount={2}
+            year={t("year1")}
+            project={t("project1")}
+          />
+          <ImageSlider
+            images={projectImage}
+            visibleCount={2}
+            year={t("year2")}
+            project={t("project2")}
+          />
+          <ImageSlider
+            images={projectImage}
+            visibleCount={2}
+            year={t("year3")}
+            project={t("project3")}
+          />
         </section>
       </main>
 
