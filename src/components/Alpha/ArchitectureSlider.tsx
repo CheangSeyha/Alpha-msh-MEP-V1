@@ -63,6 +63,9 @@ const ImageSlider: React.FC<ImageSliderProps> = ({
             <ChevronRight size={24} />
           </button>
         </div>
+        <div className="text-right text-sm text-gray-500 mr-5">
+          Images {currentIndex + 1} - {currentIndex + visibleCount} of {images.length}
+        </div>
       </div>
 
       {/* Images */}

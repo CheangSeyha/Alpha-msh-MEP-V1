@@ -9,13 +9,20 @@ import ImageSlider from "@/components/Alpha/ArchitectureSlider";
 import ArchitectureServices from "@/components/Alpha/ArchitectureServices";
 import ArchitectureLandingPage from "@/components/Alpha/ArchitectureLandingPage";
 
-const projectImages = [
-  "/Architecture/archi_planner.jpg",
-  "/Civil/civil1.jpg",
-  "/Civil/civil2.jpg",
-  "/Civil/civil3.webp",
+    const projectImages1 = [
+      "/Architecture/archi_planner.jpg",
+      "/Civil/civil1.jpg",
+      "/Civil/civil2.jpg",
+      "/Civil/civil3.webp",
 
-];
+    ];
+
+    const projectImages2 = [
+      "/Architecture/Project1/project1_01.jpg",
+      "/Architecture/Project1/project1_02.jpg",
+      "/Architecture/Project1/project1_03.jpg",
+      "/Architecture/Project1/project1_04.jpg",
+    ];
 
 function page() {
   function t(arg0: string): React.ReactNode | import("motion-dom").MotionValue<number> | import("motion-dom").MotionValue<string> {
@@ -86,9 +93,9 @@ function page() {
           <div className="absolute w-20 h-20 bottom-[10vw] z-10 right-10 bg-[#1B42CE] rounded-full opacity-25"></div>
           <div className="absolute w-20 h-20 bottom-[20vw] z-10 right-40 bg-[#1B42CE] rounded-full opacity-25"></div>
 
-            <ImageSlider images={projectImages} visibleCount={2} year={2025} project="Project 1" />
-            <ImageSlider images={projectImages} visibleCount={2} year={2025} project="Project 2" />
-            <ImageSlider images={projectImages} visibleCount={2} year={2025} project="Project 3" />
+            <ImageSlider images={projectImages1} visibleCount={2} year={2025} project="Project 1" />
+            <ImageSlider images={projectImages2} visibleCount={2} year={2025} project="Project 2" />
+            <ImageSlider images={projectImages1} visibleCount={2} year={2025} project="Project 3" />
         </section>
       </main>
       <footer className="bg-white relative z-50">
